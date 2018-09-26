@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: corlabbrvnat.bst
+Database file #1: bib.bib
+Warning--empty journal in lucas1981iterative
+Warning--empty booktitle in hermans2013learning
+You've used 44 entries,
+            2773 wiz_defined-function locations,
+            813 strings with 12907 characters,
+and the built_in function-call counts, 22561 in all, are:
+= -- 1923
+> -- 1586
+< -- 21
++ -- 530
+- -- 486
+* -- 1852
+:= -- 3466
+add.period$ -- 143
+call.type$ -- 44
+change.case$ -- 289
+chr.to.int$ -- 44
+cite$ -- 90
+duplicate$ -- 1025
+empty$ -- 1731
+format.name$ -- 552
+if$ -- 4745
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 47
+newline$ -- 229
+num.names$ -- 176
+pop$ -- 641
+preamble$ -- 1
+purify$ -- 248
+quote$ -- 0
+skip$ -- 797
+stack$ -- 0
+substring$ -- 544
+swap$ -- 134
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 469
+warning$ -- 2
+while$ -- 169
+width$ -- 0
+write$ -- 566
+(There were 2 warnings)

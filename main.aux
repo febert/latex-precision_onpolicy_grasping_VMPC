@@ -1,0 +1,158 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\bibstyle{corlabbrvnat}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{lerrel,google_handeye}
+\citation{princeton_pushgrasp}
+\citation{foresight,sna}
+\citation{pulkit}
+\citation{se3_control}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Ground truth and predictions from the model (only every 4 frames are shown). These examples show grasping, pushing, and simultaneous grasping and dragging.}\relax }}{1}{figure.caption.2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:video_prediction}{{1}{1}{\small {Ground truth and predictions from the model (only every 4 frames are shown). These examples show grasping, pushing, and simultaneous grasping and dragging.}\relax }{figure.caption.2}{}}
+\citation{foresight,sna,se3_control}
+\citation{foresight,sna,se3_control}
+\citation{lerrel,google_handeye,princeton_pushgrasp}
+\citation{crashing,greg_kahn_uncertainty}
+\citation{foresight,sna,se3_control}
+\citation{se3_control}
+\citation{foresight,sna}
+\citation{jagersand1995visual,deguchi1999image,e2c,dsae}
+\citation{hutchinson1996tutorial,kragic2002survey,desouza2002survey}
+\citation{feddema1989vision,espiau1992servo,wilson1996relative}
+\citation{caron2013photometric}
+\citation{saxena2017servoing,bateux2018servoing,lee2017servoing,google_handeye}
+\citation{camacho2013model}
+\citation{shim2003decentralized,allibert2010predictive,howard2010receding,williams2017information,deep_mpc}
+\citation{foresight,sna}
+\citation{lucas1981iterative,brox2004high,babenko2009visual,mei2009robust}
+\citation{meister2017unflow}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}}
+\citation{foresight}
+\citation{foresight,sna}
+\citation{sna}
+\citation{savp}
+\citation{cem-rk-13}
+\citation{sna,foresight}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Preliminaries}{3}{section.3}}
+\newlabel{sec:prelim}{{3}{3}{Preliminaries}{section.3}{}}
+\newlabel{eq:cost}{{1}{3}{Preliminaries}{equation.3.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Retrying by Registration}{3}{section.4}}
+\newlabel{sec:reg}{{4}{3}{Retrying by Registration}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Closed loop control is achieved by registering the current image $I_t$ globally to the first frame $I_0$ and the goal image $I_g$. In this example registration to $I_0$ succeeds while registration to $I_g$ fails since the object in $I_g$ is too far away.}  \vspace  {-0.2in} \relax }}{4}{figure.caption.3}}
+\newlabel{fig:reg_single}{{2}{4}{\small {Closed loop control is achieved by registering the current image $I_t$ globally to the first frame $I_0$ and the goal image $I_g$. In this example registration to $I_0$ succeeds while registration to $I_g$ fails since the object in $I_g$ is too far away.}  \vspace {-0.2in} \relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Closed-loop video-prediction based control}{4}{section*.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Test time procedure}{4}{subsection.4.1}}
+\newlabel{fig:discrete}{{3b}{5}{\small {Training usage.}\relax }{figure.caption.5}{}}
+\newlabel{sub@fig:discrete}{{b}{5}{\small {Training usage.}\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {(a) At test time the registration network registers the current image $I_t$ to the start image $I_0$ (top) and goal image $I_g$ (bottom), inferring the flow-fields $\mathaccentV {hat}05E{F}_{0 \leftarrow t}$ and $\mathaccentV {hat}05E{F}_{g \leftarrow t}$. (b) The registration network is trained by warping images from randomly selected timesteps along a trajectory to each other. }\relax }}{5}{figure.caption.5}}
+\newlabel{fig:registration_arch}{{3}{5}{\small {(a) At test time the registration network registers the current image $I_t$ to the start image $I_0$ (top) and goal image $I_g$ (bottom), inferring the flow-fields $\hat {F}_{0 \leftarrow t}$ and $\hat {F}_{g \leftarrow t}$. (b) The registration network is trained by warping images from randomly selected timesteps along a trajectory to each other. }\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Outputs of registration network. The first row shows images from a trajectory executed by the robot, the second shows each image warped to the initial image via registration, and the third shows the same for the goal image. A successful registration in this visualization would result in images that closely resemble the start (or goal). In these images, the locations where the designated pixel of the start image $d_0$ and the goal image $d_g$ are found is marked with red and blue crosses, respectively. It can be seen that, for the registration to the start image (red cross) the object is tracked for the first 7 frames, while the registration to the goal image (blue cross) succeeds for the last 3 time steps. The numbers in red indicate the trade off factors $\lambda $ between the views and are used as weighting factors for the planning cost.}\relax }}{5}{figure.caption.6}}
+\newlabel{fig:tracking_overtime}{{4}{5}{\small {Outputs of registration network. The first row shows images from a trajectory executed by the robot, the second shows each image warped to the initial image via registration, and the third shows the same for the goal image. A successful registration in this visualization would result in images that closely resemble the start (or goal). In these images, the locations where the designated pixel of the start image $d_0$ and the goal image $d_g$ are found is marked with red and blue crosses, respectively. It can be seen that, for the registration to the start image (red cross) the object is tracked for the first 7 frames, while the registration to the goal image (blue cross) succeeds for the last 3 time steps. The numbers in red indicate the trade off factors $\lambda $ between the views and are used as weighting factors for the planning cost.}\relax }{figure.caption.6}{}}
+\newlabel{eqn:warped_pos}{{4}{5}{Test time procedure}{equation.4.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Planning Costs}{5}{section.5}}
+\citation{meister2017unflow}
+\citation{meister2017unflow}
+\citation{foresight,sna}
+\citation{sna,foresight}
+\citation{grasping_fetal}
+\newlabel{eqn:cost_avg}{{5}{6}{Planning Costs}{equation.5.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Training procedure}{6}{subsection.5.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Scaling up Visual Model-Predictive Control}{6}{section.6}}
+\@writefile{toc}{\contentsline {paragraph}{Extension to multiple cameras.}{6}{section*.7}}
+\@writefile{toc}{\contentsline {paragraph}{Combined prehensile and non-prehensile manipulation.}{6}{section*.8}}
+\citation{babenko2009visual}
+\citation{sna}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Applying our method to a pushing task. In the first 3 time instants the object behaves unexpectedly, moving down. The tracking then allows the robot to retry, allowing it to eventually bring the object to the goal.}\relax }}{7}{figure.caption.11}}
+\newlabel{fig:push_retry}{{6}{7}{\small {Applying our method to a pushing task. In the first 3 time instants the object behaves unexpectedly, moving down. The tracking then allows the robot to retry, allowing it to eventually bring the object to the goal.}\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Retrying behaviour of our method combining prehensile and non-prehensile manipulation. In the first 4 time instants shown the agent pushes the object. It then loses the object, and decides to grasp it pulling it all the way to the goal. Retrying is enabled by applying the learned registration to both camera views (here we only show the front view).}\relax }}{7}{figure.caption.12}}
+\newlabel{fig:discrete}{{7}{7}{\small {Retrying behaviour of our method combining prehensile and non-prehensile manipulation. In the first 4 time instants shown the agent pushes the object. It then loses the object, and decides to grasp it pulling it all the way to the goal. Retrying is enabled by applying the learned registration to both camera views (here we only show the front view).}\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Experiments}{7}{section.7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Real-world benchmark for pushing with 20 different tasks evaluated on unseen objects. Fraction of runs where final distance (in pixel units of 48x64 image) is lower than threshold. Our method shows a clear gain over OpenCV tracking and predictor propagation.}\relax }}{7}{figure.caption.9}}
+\newlabel{fig:push_bench}{{5}{7}{\small {Real-world benchmark for pushing with 20 different tasks evaluated on unseen objects. Fraction of runs where final distance (in pixel units of 48x64 image) is lower than threshold. Our method shows a clear gain over OpenCV tracking and predictor propagation.}\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Real-World Experiments}{7}{subsection.7.1}}
+\@writefile{toc}{\contentsline {paragraph}{Pushing with retrying.}{7}{figure.caption.12}}
+\citation{sna}
+\citation{babenko2009visual}
+\citation{hermans2013learning,salganicoff1993vision}
+\citation{salganicoff1993vision}
+\citation{hermans2013learning}
+\citation{goldfeder2009data}
+\citation{mahler2017dex}
+\citation{lenz2015deep,goldfeder2009data,zeng2017robotic}
+\citation{hermans2013learning,salganicoff1993vision}
+\citation{sna}
+\bibdata{bib}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {On the real-world grasping benchmark our method is on par with OpenCV tracking.}\relax }}{8}{figure.caption.14}}
+\newlabel{fig:grasp_bench}{{8}{8}{\small {On the real-world grasping benchmark our method is on par with OpenCV tracking.}\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {paragraph}{Combined prehensile and non-prehensile manipulation.}{8}{figure.caption.14}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Discussion}{8}{section.8}}
+\bibcite{lerrel}{{1}{2016}{{Pinto and Gupta}}{{}}}
+\bibcite{google_handeye}{{2}{2016}{{Levine et~al.}}{{Levine, Pastor, Krizhevsky, Ibarz, and Quillen}}}
+\bibcite{princeton_pushgrasp}{{3}{2018}{{Zeng et~al.}}{{Zeng, Song, Welker, Lee, Rodriguez, and Funkhouser}}}
+\bibcite{foresight}{{4}{2017}{{Finn and Levine}}{{}}}
+\bibcite{sna}{{5}{2017}{{Ebert et~al.}}{{Ebert, Finn, Lee, and Levine}}}
+\bibcite{pulkit}{{6}{2016}{{Agrawal et~al.}}{{Agrawal, Nair, Abbeel, Malik, and Levine}}}
+\bibcite{se3_control}{{7}{2017}{{Byravan et~al.}}{{Byravan, Leeb, Meier, and Fox}}}
+\bibcite{crashing}{{8}{2017}{{Gandhi et~al.}}{{Gandhi, Pinto, and Gupta}}}
+\bibcite{greg_kahn_uncertainty}{{9}{2017}{{Kahn et~al.}}{{Kahn, Villaflor, Pong, Abbeel, and Levine}}}
+\bibcite{jagersand1995visual}{{10}{1995}{{Jagersand and Nelson}}{{}}}
+\bibcite{deguchi1999image}{{11}{1999}{{Deguchi and Takahashi}}{{}}}
+\bibcite{e2c}{{12}{2015}{{Watter et~al.}}{{Watter, Springenberg, Boedecker, and Riedmiller}}}
+\bibcite{dsae}{{13}{2016}{{Finn et~al.}}{{Finn, Tan, Duan, Darrell, Levine, and Abbeel}}}
+\bibcite{hutchinson1996tutorial}{{14}{1996}{{Hutchinson et~al.}}{{Hutchinson, Hager, and Corke}}}
+\bibcite{kragic2002survey}{{15}{2002}{{Kragic and Christensen}}{{}}}
+\bibcite{desouza2002survey}{{16}{2002}{{DeSouza and Kak}}{{}}}
+\bibcite{feddema1989vision}{{17}{1989}{{Feddema and Mitchell}}{{}}}
+\bibcite{espiau1992servo}{{18}{1992}{{Espiau et~al.}}{{Espiau, Chaumette, and Rives}}}
+\bibcite{wilson1996relative}{{19}{1996}{{Wilson et~al.}}{{Wilson, Williams~Hulls, and Bell}}}
+\bibcite{caron2013photometric}{{20}{2013}{{Caron et~al.}}{{Caron, Marchand, and Mouaddib}}}
+\bibcite{saxena2017servoing}{{21}{2017}{{Saxena et~al.}}{{Saxena, Pandya, Kumar, Gaud, and Krishna}}}
+\bibcite{bateux2018servoing}{{22}{2018}{{Bateux et~al.}}{{Bateux, Marchand, Leitner, and Chaumette}}}
+\bibcite{lee2017servoing}{{23}{2017}{{Lee et~al.}}{{Lee, Levine, and Abbeel}}}
+\bibcite{camacho2013model}{{24}{2013}{{Camacho and Alba}}{{}}}
+\bibcite{shim2003decentralized}{{25}{2003}{{Shim et~al.}}{{Shim, Kim, and Sastry}}}
+\bibcite{allibert2010predictive}{{26}{2010}{{Allibert et~al.}}{{Allibert, Courtial, and Chaumette}}}
+\bibcite{howard2010receding}{{27}{2010}{{Howard et~al.}}{{Howard, Green, and Kelly}}}
+\bibcite{williams2017information}{{28}{2017}{{Williams et~al.}}{{Williams, Wagener, Goldfain, Drews, Rehg, Boots, and Theodorou}}}
+\bibcite{deep_mpc}{{29}{2015}{{Lenz and Saxena}}{{}}}
+\bibcite{lucas1981iterative}{{30}{1981}{{Lucas et~al.}}{{Lucas, Kanade, et~al.}}}
+\bibcite{brox2004high}{{31}{2004}{{Brox et~al.}}{{Brox, Bruhn, Papenberg, and Weickert}}}
+\bibcite{babenko2009visual}{{32}{2009}{{Babenko et~al.}}{{Babenko, Yang, and Belongie}}}
+\bibcite{mei2009robust}{{33}{2009}{{Mei and Ling}}{{}}}
+\bibcite{meister2017unflow}{{34}{2017}{{Meister et~al.}}{{Meister, Hur, and Roth}}}
+\bibcite{savp}{{35}{2018}{{Lee et~al.}}{{Lee, Zhang, Ebert, Abbeel, Finn, and Levine}}}
+\bibcite{cem-rk-13}{{36}{2013}{{Rubinstein and Kroese}}{{}}}
+\bibcite{grasping_fetal}{{37}{1993}{{Sherer}}{{}}}
+\bibcite{hermans2013learning}{{38}{2013}{{Hermans et~al.}}{{Hermans, Li, Rehg, and Bobick}}}
+\bibcite{salganicoff1993vision}{{39}{1993}{{Salganicoff et~al.}}{{Salganicoff, Metta, Oddera, and Sandini}}}
+\bibcite{goldfeder2009data}{{40}{2009}{{Goldfeder et~al.}}{{Goldfeder, Ciocarlie, Peretzman, Dang, and Allen}}}
+\bibcite{mahler2017dex}{{41}{2017}{{Mahler et~al.}}{{Mahler, Liang, Niyaz, Laskey, Doan, Liu, Ojea, and Goldberg}}}
+\bibcite{lenz2015deep}{{42}{2015}{{Lenz et~al.}}{{Lenz, Lee, and Saxena}}}
+\bibcite{zeng2017robotic}{{43}{2017}{{Zeng et~al.}}{{Zeng, Song, Yu, Donlon, Hogan, Bauza, Ma, Taylor, Liu, Romo, et~al.}}}
+\bibcite{todorov2012mujoco}{{44}{2012}{{Todorov et~al.}}{{Todorov, Erez, and Tassa}}}
+\citation{todorov2012mujoco}
+\citation{sna}
+\citation{sna}
+\@writefile{toc}{\contentsline {subsection}{\numberline {.1}Simulated Experiments}{12}{subsection.Alph0.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Simulated evaluation. Fraction of trajectories with final object distance lower than threshold (higher is better).}\relax }}{12}{figure.caption.17}}
+\newlabel{fig:sim_bench}{{9}{12}{\small {Simulated evaluation. Fraction of trajectories with final object distance lower than threshold (higher is better).}\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Block pushing simulator}\relax }}{12}{figure.caption.18}}
+\newlabel{fig:sim}{{10}{12}{\small {Block pushing simulator}\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Improvements to online optimization procedure}{12}{appendix.A}}

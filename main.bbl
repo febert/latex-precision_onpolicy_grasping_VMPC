@@ -1,0 +1,285 @@
+\begin{thebibliography}{44}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Pinto and Gupta(2016)]{lerrel}
+L.~Pinto and A.~Gupta.
+\newblock Supersizing self-supervision: Learning to grasp from 50k tries and
+  700 robot hours.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)},
+  2016.
+
+\bibitem[Levine et~al.(2016)Levine, Pastor, Krizhevsky, Ibarz, and
+  Quillen]{google_handeye}
+S.~Levine, P.~Pastor, A.~Krizhevsky, J.~Ibarz, and D.~Quillen.
+\newblock Learning hand-eye coordination for robotic grasping with deep
+  learning and large-scale data collection.
+\newblock \emph{International Journal of Robotics Research (IJRR)}, 2016.
+
+\bibitem[Zeng et~al.(2018)Zeng, Song, Welker, Lee, Rodriguez, and
+  Funkhouser]{princeton_pushgrasp}
+A.~Zeng, S.~Song, S.~Welker, J.~Lee, A.~Rodriguez, and T.~Funkhouser.
+\newblock Learning synergies between pushing and grasping with self-supervised
+  deep reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:1803.09956}, 2018.
+
+\bibitem[Finn and Levine(2017)]{foresight}
+C.~Finn and S.~Levine.
+\newblock Deep visual foresight for planning robot motion.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)},
+  2017.
+
+\bibitem[Ebert et~al.(2017)Ebert, Finn, Lee, and Levine]{sna}
+F.~Ebert, C.~Finn, A.~X. Lee, and S.~Levine.
+\newblock Self-supervised visual planning with temporal skip connections.
+\newblock \emph{CoRR}, abs/1710.05268, 2017.
+\newblock URL \url{http://arxiv.org/abs/1710.05268}.
+
+\bibitem[Agrawal et~al.(2016)Agrawal, Nair, Abbeel, Malik, and Levine]{pulkit}
+P.~Agrawal, A.~V. Nair, P.~Abbeel, J.~Malik, and S.~Levine.
+\newblock Learning to poke by poking: Experiential learning of intuitive
+  physics.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2016.
+
+\bibitem[Byravan et~al.(2017)Byravan, Leeb, Meier, and Fox]{se3_control}
+A.~Byravan, F.~Leeb, F.~Meier, and D.~Fox.
+\newblock {SE3-Pose-Nets}: Structured deep dynamics models for visuomotor
+  planning and control.
+\newblock \emph{arXiv preprint arXiv:1710.00489}, 2017.
+
+\bibitem[Gandhi et~al.(2017)Gandhi, Pinto, and Gupta]{crashing}
+D.~Gandhi, L.~Pinto, and A.~Gupta.
+\newblock Learning to fly by crashing.
+\newblock \emph{arXiv preprint arXiv:1704.05588}, 2017.
+
+\bibitem[Kahn et~al.(2017)Kahn, Villaflor, Pong, Abbeel, and
+  Levine]{greg_kahn_uncertainty}
+G.~Kahn, A.~Villaflor, V.~Pong, P.~Abbeel, and S.~Levine.
+\newblock Uncertainty-aware reinforcement learning for collision avoidance.
+\newblock \emph{arXiv preprint arXiv:1702.01182}, 2017.
+
+\bibitem[Jagersand and Nelson(1995)]{jagersand1995visual}
+M.~Jagersand and R.~Nelson.
+\newblock Visual space task specification, planning and control.
+\newblock In \emph{International Symposium on Computer Vision}, 1995.
+
+\bibitem[Deguchi and Takahashi(1999)]{deguchi1999image}
+K.~Deguchi and I.~Takahashi.
+\newblock Image-based simultaneous control of robot and target object motions
+  by direct-image-interpretation method.
+\newblock In \emph{International Conference on Intelligent Robots and Systems
+  (IROS)}, 1999.
+
+\bibitem[Watter et~al.(2015)Watter, Springenberg, Boedecker, and
+  Riedmiller]{e2c}
+M.~Watter, J.~Springenberg, J.~Boedecker, and M.~Riedmiller.
+\newblock Embed to control: A locally linear latent dynamics model for control
+  from raw images.
+\newblock In \emph{Advances in neural information processing systems}, 2015.
+
+\bibitem[Finn et~al.(2016)Finn, Tan, Duan, Darrell, Levine, and Abbeel]{dsae}
+C.~Finn, X.~Y. Tan, Y.~Duan, T.~Darrell, S.~Levine, and P.~Abbeel.
+\newblock Deep spatial autoencoders for visuomotor learning.
+\newblock In \emph{Robotics and Automation (ICRA), 2016 IEEE International
+  Conference on}. IEEE, 2016.
+
+\bibitem[Hutchinson et~al.(1996)Hutchinson, Hager, and
+  Corke]{hutchinson1996tutorial}
+S.~Hutchinson, G.~D. Hager, and P.~I. Corke.
+\newblock A tutorial on visual servo control.
+\newblock \emph{IEEE transactions on robotics and automation}, 12\penalty0
+  (5):\penalty0 651--670, 1996.
+
+\bibitem[Kragic and Christensen(2002)]{kragic2002survey}
+D.~Kragic and H.~I. Christensen.
+\newblock Survey on visual servoing for manipulation.
+\newblock \emph{Computational Vision and Active Perception Laboratory,
+  Fiskartorpsv}, 15, 2002.
+
+\bibitem[DeSouza and Kak(2002)]{desouza2002survey}
+G.~N. DeSouza and A.~C. Kak.
+\newblock Vision for mobile robot navigation: A survey.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 24\penalty0 (2):\penalty0 237--267, 2002.
+
+\bibitem[Feddema and Mitchell(1989)]{feddema1989vision}
+J.~T. Feddema and O.~R. Mitchell.
+\newblock Vision-guided servoing with feature-based trajectory generation (for
+  robots).
+\newblock \emph{IEEE Transactions on Robotics and Automation}, 5\penalty0
+  (5):\penalty0 691--700, 1989.
+
+\bibitem[Espiau et~al.(1992)Espiau, Chaumette, and Rives]{espiau1992servo}
+B.~Espiau, F.~Chaumette, and P.~Rives.
+\newblock A new approach to visual servoing in robotics.
+\newblock \emph{IEEE Transactions on Robotics and Automation}, 8\penalty0
+  (3):\penalty0 313--326, 1992.
+
+\bibitem[Wilson et~al.(1996)Wilson, Williams~Hulls, and
+  Bell]{wilson1996relative}
+W.~J. Wilson, C.~C. Williams~Hulls, and G.~S. Bell.
+\newblock Relative end-effector control using cartesian position based visual
+  servoing.
+\newblock \emph{IEEE Transactions on Robotics and Automation}, 12\penalty0
+  (5):\penalty0 684--696, 1996.
+
+\bibitem[Caron et~al.(2013)Caron, Marchand, and Mouaddib]{caron2013photometric}
+G.~Caron, E.~Marchand, and E.~M. Mouaddib.
+\newblock Photometric visual servoing for omnidirectional cameras.
+\newblock \emph{Autonomous Robots}, 35\penalty0 (2-3):\penalty0 177--193, 2013.
+
+\bibitem[Saxena et~al.(2017)Saxena, Pandya, Kumar, Gaud, and
+  Krishna]{saxena2017servoing}
+A.~Saxena, H.~Pandya, G.~Kumar, A.~Gaud, and K.~M. Krishna.
+\newblock Exploring convolutional networks for end-to-end visual servoing.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)},
+  2017.
+
+\bibitem[Bateux et~al.(2018)Bateux, Marchand, Leitner, and
+  Chaumette]{bateux2018servoing}
+Q.~Bateux, E.~Marchand, J.~Leitner, and F.~Chaumette.
+\newblock Visual servoing from deep neural networks.
+\newblock In \emph{International Conference on Robotics and Automation (ICRA)},
+  2018.
+
+\bibitem[Lee et~al.(2017)Lee, Levine, and Abbeel]{lee2017servoing}
+A.~X. Lee, S.~Levine, and P.~Abbeel.
+\newblock Learning visual servoing with deep features and fitted {Q}-iteration.
+\newblock \emph{International Conference on Learning Representations (ICLR)},
+  2017.
+
+\bibitem[Camacho and Alba(2013)]{camacho2013model}
+E.~F. Camacho and C.~B. Alba.
+\newblock \emph{Model predictive control}.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem[Shim et~al.(2003)Shim, Kim, and Sastry]{shim2003decentralized}
+D.~H. Shim, H.~J. Kim, and S.~Sastry.
+\newblock Decentralized nonlinear model predictive control of multiple flying
+  robots.
+\newblock In \emph{Decision and control, 2003. Proceedings. 42nd IEEE
+  conference on}, volume~4, pages 3621--3626. IEEE, 2003.
+
+\bibitem[Allibert et~al.(2010)Allibert, Courtial, and
+  Chaumette]{allibert2010predictive}
+G.~Allibert, E.~Courtial, and F.~Chaumette.
+\newblock Predictive control for constrained image-based visual servoing.
+\newblock \emph{IEEE Transactions on Robotics}, 26\penalty0 (5):\penalty0
+  933--939, 2010.
+
+\bibitem[Howard et~al.(2010)Howard, Green, and Kelly]{howard2010receding}
+T.~M. Howard, C.~J. Green, and A.~Kelly.
+\newblock Receding horizon model-predictive control for mobile robot navigation
+  of intricate paths.
+\newblock In \emph{Field and Service Robotics}, pages 69--78. Springer, 2010.
+
+\bibitem[Williams et~al.(2017)Williams, Wagener, Goldfain, Drews, Rehg, Boots,
+  and Theodorou]{williams2017information}
+G.~Williams, N.~Wagener, B.~Goldfain, P.~Drews, J.~M. Rehg, B.~Boots, and E.~A.
+  Theodorou.
+\newblock Information theoretic mpc for model-based reinforcement learning.
+\newblock In \emph{Robotics and Automation (ICRA), 2017 IEEE International
+  Conference on}, pages 1714--1721. IEEE, 2017.
+
+\bibitem[Lenz and Saxena(2015)]{deep_mpc}
+I.~Lenz and A.~Saxena.
+\newblock Deepmpc: Learning deep latent features for model predictive control.
+\newblock In \emph{In RSS}. Citeseer, 2015.
+
+\bibitem[Lucas et~al.(1981)Lucas, Kanade, et~al.]{lucas1981iterative}
+B.~D. Lucas, T.~Kanade, et~al.
+\newblock An iterative image registration technique with an application to
+  stereo vision.
+\newblock 1981.
+
+\bibitem[Brox et~al.(2004)Brox, Bruhn, Papenberg, and Weickert]{brox2004high}
+T.~Brox, A.~Bruhn, N.~Papenberg, and J.~Weickert.
+\newblock High accuracy optical flow estimation based on a theory for warping.
+\newblock In \emph{European conference on computer vision}. Springer, 2004.
+
+\bibitem[Babenko et~al.(2009)Babenko, Yang, and Belongie]{babenko2009visual}
+B.~Babenko, M.-H. Yang, and S.~Belongie.
+\newblock Visual tracking with online multiple instance learning.
+\newblock In \emph{Computer Vision and Pattern Recognition, 2009. CVPR 2009.
+  IEEE Conference on}, pages 983--990. IEEE, 2009.
+
+\bibitem[Mei and Ling(2009)]{mei2009robust}
+X.~Mei and H.~Ling.
+\newblock Robust visual tracking using ℓ 1 minimization.
+\newblock In \emph{Computer Vision, 2009 IEEE 12th International Conference
+  on}, pages 1436--1443. IEEE, 2009.
+
+\bibitem[Meister et~al.(2017)Meister, Hur, and Roth]{meister2017unflow}
+S.~Meister, J.~Hur, and S.~Roth.
+\newblock Unflow: Unsupervised learning of optical flow with a bidirectional
+  census loss.
+\newblock \emph{arXiv preprint arXiv:1711.07837}, 2017.
+
+\bibitem[Lee et~al.(2018)Lee, Zhang, Ebert, Abbeel, Finn, and Levine]{savp}
+A.~X. Lee, R.~Zhang, F.~Ebert, P.~Abbeel, C.~Finn, and S.~Levine.
+\newblock Stochastic adversarial video prediction.
+\newblock \emph{arXiv preprint arXiv:1804.01523}, 2018.
+
+\bibitem[Rubinstein and Kroese(2013)]{cem-rk-13}
+R.~Y. Rubinstein and D.~P. Kroese.
+\newblock \emph{The cross-entropy method: a unified approach to combinatorial
+  optimization, Monte-Carlo simulation and machine learning}.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem[Sherer(1993)]{grasping_fetal}
+D.~Sherer.
+\newblock Fetal grasping at 16 weeks' gestation.
+\newblock \emph{Journal of ultrasound in medicine}, 12\penalty0 (6), 1993.
+
+\bibitem[Hermans et~al.(2013)Hermans, Li, Rehg, and
+  Bobick]{hermans2013learning}
+T.~Hermans, F.~Li, J.~M. Rehg, and A.~F. Bobick.
+\newblock Learning contact locations for pushing and orienting unknown objects.
+\newblock Georgia Institute of Technology, 2013.
+
+\bibitem[Salganicoff et~al.(1993)Salganicoff, Metta, Oddera, and
+  Sandini]{salganicoff1993vision}
+M.~Salganicoff, G.~Metta, A.~Oddera, and G.~Sandini.
+\newblock \emph{A vision-based learning method for pushing manipulation},
+  volume~54.
+\newblock University of Pennsylvania, 1993.
+
+\bibitem[Goldfeder et~al.(2009)Goldfeder, Ciocarlie, Peretzman, Dang, and
+  Allen]{goldfeder2009data}
+C.~Goldfeder, M.~Ciocarlie, J.~Peretzman, H.~Dang, and P.~K. Allen.
+\newblock Data-driven grasping with partial sensor data.
+\newblock In \emph{Intelligent Robots and Systems, 2009. IROS 2009. IEEE/RSJ
+  International Conference on}, pages 1278--1283. Citeseer, 2009.
+
+\bibitem[Mahler et~al.(2017)Mahler, Liang, Niyaz, Laskey, Doan, Liu, Ojea, and
+  Goldberg]{mahler2017dex}
+J.~Mahler, J.~Liang, S.~Niyaz, M.~Laskey, R.~Doan, X.~Liu, J.~A. Ojea, and
+  K.~Goldberg.
+\newblock Dex-net 2.0: Deep learning to plan robust grasps with synthetic point
+  clouds and analytic grasp metrics.
+\newblock \emph{arXiv preprint arXiv:1703.09312}, 2017.
+
+\bibitem[Lenz et~al.(2015)Lenz, Lee, and Saxena]{lenz2015deep}
+I.~Lenz, H.~Lee, and A.~Saxena.
+\newblock Deep learning for detecting robotic grasps.
+\newblock \emph{The International Journal of Robotics Research}, 34\penalty0
+  (4-5):\penalty0 705--724, 2015.
+
+\bibitem[Zeng et~al.(2017)Zeng, Song, Yu, Donlon, Hogan, Bauza, Ma, Taylor,
+  Liu, Romo, et~al.]{zeng2017robotic}
+A.~Zeng, S.~Song, K.-T. Yu, E.~Donlon, F.~R. Hogan, M.~Bauza, D.~Ma, O.~Taylor,
+  M.~Liu, E.~Romo, et~al.
+\newblock Robotic pick-and-place of novel objects in clutter with
+  multi-affordance grasping and cross-domain image matching.
+\newblock \emph{arXiv preprint arXiv:1710.01330}, 2017.
+
+\bibitem[Todorov et~al.(2012)Todorov, Erez, and Tassa]{todorov2012mujoco}
+E.~Todorov, T.~Erez, and Y.~Tassa.
+\newblock Mujoco: A physics engine for model-based control.
+\newblock In \emph{Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ
+  International Conference on}, pages 5026--5033. IEEE, 2012.
+
+\end{thebibliography}

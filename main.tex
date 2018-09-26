@@ -1,26 +1,17 @@
 \documentclass{article}
 
-% if you need to pass options to natbib, use, e.g.:
-% \PassOptionsToPackage{numbers, compress}{natbib}
-% before loading nips_2018
+% \usepackage{corl_2018}
+\usepackage[final]{corl_2018} % Uncomment for the camera-ready ``final'' version
+\usepackage{wrapfig}
 
-% ready for submission
+\usepackage{subcaption}
+\usepackage{graphicx}
 
-\usepackage[]{biblatex}
-\addbibresource{bib.bib}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
 
-\usepackage[nonatbib]{nips_2018}
-
-
-% to compile a preprint version, e.g., for submission to arXiv, add
-% add the [preprint] option:
-% \usepackage[preprint]{nips_2018}
-
-% to compile a camera-ready version, add the [final] option, e.g.:
-% \usepackage[final]{nips_2018}
-
-% to avoid loading the natbib package, add option nonatbib:
-% \usepackage[nonatbib]{nips_2018}
+\providecommand\todo[1]{\textcolor{Red}{#1}}
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
@@ -31,10 +22,19 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage[svgnames]{xcolor}
+\usepackage{authblk}
 
 \providecommand\comment[1]{\textbf{COMMENT:} \textcolor{Magenta}{#1}}
 
-\title{Precision from Retrying: Closed-Loop Robotic Manipulation using Self-Supervised Learning}
+\setlength{\bibsep}{4pt plus 0.3ex}
+
+% \title{Precision via Persistence: Closed-Loop Robotic Manipulation with Self-Supervised Learning}
+\title{Robustness via Retrying: Closed-Loop Robotic Manipulation with Self-Supervised Learning}
+% How about this title? We're actually getting more robustness than precision from the tracking..
+% Hmm. Maybe Robustness via Retrying? Though, I like Persistence.
+
+%%SL.06.12: I really like the title! Especially the first part. I do not think it's regrettable though that it doesn't really say much about how the method works, but maybe that's OK? It's definitely very catchy and manages to capture the main *new* contribution quite well. Maybe you can work in the word "visual" or "vision-based" before closed-loop? that makes it much more impressive -- lots of things are closed-loop, but not many things close the loop on vision
+%%CF.06.11: How about the following: Precision via Persistence: Closed-Loop Robotic Manipulation with Self-Supervised Learning
 %%SL.04.20: Let's think about the title a bit more. This seems like a reasonable starting point. But first let's list the main ideas that seem to make the work exciting:
 %The ability to fix mistakes
 %The ability to reach goal images by comparing them directly to the current image
@@ -63,36 +63,48 @@
 % on the second line, try using \AND instead of \And before the third
 % author name.
 
-\author{
-  David S.~Hippocampus\thanks{Use footnote for providing further
-    information about author (webpage, alternative
-    address)---\emph{not} for acknowledging funding agencies.} \\
-  Department of Computer Science\\
-  Cranberry-Lemon University\\
-  Pittsburgh, PA 15213 \\
-  \texttt{hippo@cs.cranberry-lemon.edu} \\
-  %% examples of more authors
-  %% \And
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
-  %% \AND
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
-  %% \And
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
-  %% \And
-  %% Coauthor \\
-  %% Affiliation \\
-  %% Address \\
-  %% \texttt{email} \\
-}
+% NOTE: authors will be visible only in the camera-ready (ie, when using the option 'final'). 
+% 	For the initial submission the authors will be anonymized.
+
+% \author{
+%   David S.~Hippocampus\\
+%   Department of Electrical Engineering and Computer Sciences\\
+%   University of California Berkeley 
+%   United States\\
+%   \texttt{hippo@berkeley.edu} \\
+%   %% examples of more authors
+%   %% \And
+%   %% Coauthor \\
+%   %% Affiliation \\
+%   %% Address \\
+%   %% \texttt{email} \\
+%   %% \AND
+%   %% Coauthor \\
+%   %% Affiliation \\
+%   %% Address \\
+%   %% \texttt{email} \\
+%   %% \And
+%   %% Coauthor \\
+%   %% Affiliation \\
+%   %% Address \\
+%   %% \texttt{email} \\
+%   %% \And
+%   %% Coauthor \\
+%   %% Affiliation \\
+%   %% Address \\
+%   %% \texttt{email} \\
+% }
+
+
+\author[1]{Frederik Ebert}
+\author[1]{Sudeep Dasari}
+\author[1]{Chelsea Finn}
+\author[1]{Alex X. Lee}
+\author[1]{Sergey Levine}
+
+\affil[1]{\footnotesize Department of Electrical Engineering and Computer Sciences, UC Berkeley, United States}
+
+\affil[ ]{\texttt{\{febert, sdasari, cbfinn,alexlee\_gk,svlevine\}@berkeley.edu}}
 
 \begin{document}
 % \nipsfinalcopy is no longer used
@@ -100,21 +112,53 @@
 \maketitle
 
 \begin{abstract}
-Self-supervised learning methods, in particular video-prediction has recently been successfully used in robotic manipulation showing that generalizable skills can arise without the need for any external supervision.
-%%SL.04.20: It would be a good idea to start with one sentence of fairly broad motivation to explain the bigger context of why the problem matters. It doesn't really need to be specific to video prediction, but more of a broad motivation for self-supervised visual learning of skills.
-Self-supervised methods have the advantage that data is collected automatically in large amounts while removing the need for expensive data labeling. However the manipulation skills obtained in this way thus far have been coarse.
-%%SL.04.20: not obvious what coarse means
-The first contribution of this work is a video-prediction based model-predictive control (MPC)
-%%SL.04.20: I'm inclined to suggest leaving the jargon (like MPC) out of the abstract for now, and using more accessible phrasing.
-algorithm that achieves high precision by incorporating a learned image-to-image registration module that allows a user to specify target states precisely using goal-images. The model-predictive control algorithm continuously registers the current observations to the goal image allowing it to correct for prediction errors by "retrying" until the goal is achieved. 
+% Understanding how the world works -- which actions lead to which future events -- can allow humans to act intelligently in complex and unfamiliar situations. Crucially, understanding and predicting physical interactions does not require any supervision beyond observation of one's own actions and their consequences. This makes
+Prediction is an appealing objective for self-supervised learning of behavioral skills, for example for autonomous robots. However, incorporating prediction of future sensory inputs into an end-to-end framework for decision making and control poses a number of major challenges. How should the predictive model be used? What happens when the predictions are inaccurate? In this paper, we tackle these questions by proposing a method for learning complex robotic skills from raw image observations, using only autonomously collected experience. We show that even an imperfect model can complete complex tasks if it can continuously retry, but this requires the model to not lose track of the objective (e.g., the object of interest). By incorporating  learned registration into our method, we can enable a robot to continuously retry the task until it gets it right. We demonstrate that this idea can be combined with a video-prediction based controller to enable complex behaviors to be learned from scratch using only raw visual inputs, including grasping, repositioning objects, and non-prehensile manipulation. Our real-world experiments demonstrate a model trained with 160 robot hours of autonomously collected data is able to successfully master complex manipulation tasks with a wide range of objects not seen during training. 
 
-Past self-supervised learning approaches collect data by applying random actions thus restricting range of states where the learned model is valid. The second contribution is a method for directing the data collection towards task-relevant areas of the state space. We propose a method that leverages small numbers of demonstrations and collects additional on-policy data by running the proposed model-predictive control algorithm with an automatically selected goal. In addition to using demonstrations our method also allows for making use of prior domain knowledge to further improve the data collection process: Data collection can be started with simple hand-engineered policies that only requires a very low success rates.
 \end{abstract}
-%%SL.04.20: Here is my attempt at an alternative abstract that I thing brings out some of the more exciting things about the work. Maybe this can serve as some inspiration for how to get a more focused abstract in place that at the same time still touches on the big picture stuff:
+%%SL.04.20: Here is my attempt at an alternative abstract that I think brings out some of the more exciting things about the work. Maybe this can serve as some inspiration for how to get a more focused abstract in place that at the same time still touches on the big picture stuff:
 %Understanding how the world works -- which actions lead to which future events -- can allow humans and animals to act intelligently in complex and unfamiliar situations. Crucially, understanding and predicting physical interactions does not require any supervision beyond observation of one's own actions and their consequences. This makes prediction an appealing objective for self-supervised learning of behavioral skills, for example for autonomous robots. However, incorporating prediction of future sensory inputs into an end-to-end framework for decision making and control poses a number of major challenges. How should the data for learning to predict be collected? How should the predictive model be used? What happens when the predictions are inaccurate? In this paper, we tackle these questions by proposing a method for learning complex robotic skills from raw image observations, using only autonomously collected experience. Our method is based on two key ideas. First, we use self-directed play to collect data, where the robot autonomously proposes goals and then attempts to execute them. We demonstrate in simulation that this substantially improves performance over random data collection. Second, we observe that even an imperfect model can complete complex tasks if it can continuously retry, but this requires the model to not lose track of the objective (e.g., the object of interest). By incorporating end-to-end learned registration into our method, we can enable the robot to continuously retry the task until it gets it right. We demonstrate that these two ideas can be combined to enable complex behaviors to be learned from scratch using only raw visual inputs, including grasping and repositioning objects, non-prehensile pushing, and maneuvering objects around obstacles. Our real-world experiments demonstrate a model trained with ??? hours of autonomously collected experience with self-directed play, and testing on previously unseen objects.
 
 \input{intro}
 
+\input{relatedwork}
 
-\printbibliography
+\input{preliminaries.tex}
+
+
+\input{registration}
+
+\input{planning_costs.tex}
+
+\input{trainining_procedure.tex}
+
+\input{multi-viewcontrol.tex}
+
+
+
+\input{experiments}
+
+\input{conclusion.tex}
+
+%===============================================================================
+
+% The maximum paper length is 8 pages excluding references and acknowledgements, and 10 pages including references and acknowledgements
+
+%\clearpage
+% The acknowledgments are automatically included only in the final version of the paper.
+%\acknowledgments{If a paper is accepted, the final camera-ready version will (and probably should) include acknowledgments. All acknowledgments go at the end of the paper, including thanks to reviewers who gave useful comments, to colleagues who contributed to the ideas, and to funding agencies and corporate sponsors that provided financial support.}
+
+%===============================================================================
+
+% no \bibliographystyle is required, since the corl style is automatically used.
+\bibliography{bib}  % .bib
+
+
+\newpage
+\appendix
+
+{\footnotesize
+\input{appendix.tex}
+}
+
 \end{document}

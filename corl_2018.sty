@@ -1,116 +1,74 @@
-% partial rewrite of the LaTeX2e package for submissions to the
-% Conference on Neural Information Processing Systems (NIPS):
+% File: corl_2018.sty 
 %
-% - uses more LaTeX conventions
-% - line numbers at submission time replaced with aligned numbers from
-%   lineno package
-% - \nipsfinalcopy replaced with [final] package option
-% - automatically loads times package for authors
-% - loads natbib automatically; this can be suppressed with the
-%   [nonatbib] package option
-% - adds foot line to first page identifying the conference
-% - adds preprint option for submission to e.g. arXiv
+% Latex templates for the Conference on Robot Learning (CoRL)
 %
-% Roman Garnett (garnett@wustl.edu) and the many authors of
-% nips15submit_e.sty, including MK and drstrip@sandia
+% This template is heavily inspired by the NIPS, ICML, ICLR and IEEE Transactions latex templates.
+% Hence we would like to thank: Roman Garnett and the previous mantainers of the NIPS style, Percy Liang and the previous mantainers of the ICML style, Hugo Larochelle for the ICLR style, and Michael Shell for the IEEE Transactions style.
 %
-% last revision: March 2018
+% History:
+% 2017/06/13 - fixed typo
+% 2017/06/12 - Modified to use corlabbrvnat.bst, which order the reference by order of appearance in the paper
+% 2017/04/16 - First revision by Roberto Calandra (roberto.calandra@berkeley.edu).
+%	       Main changes:
+%	       - The abstract is more compact compared to NIPS/ICML
+%	       - References are by default using natbib with squared numbers (e.g., [1])
+%	       - DOI fields from the bibtex are automatically converted to hyperlinks 
+%	       to the corresponding page
+%	       - acknowledgments are now a command, and the corresponding subsubsection is
+%	       automatically included only in the final version
+%
+% 2018/05/09 - Slightly modified for CoRL 2018 by Jun Morimoto (xmorimo@atr.jp)
+%
+% TODO: nohyperref is not working at the moment
+% 
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{nips_2018}[2018/03/03 NIPS 2018 submission/camera-ready style file]
+\ProvidesPackage{corl_2018}[2018/06/15 CORL 2018 submission/camera-ready style file]
 
-% declare final option, which creates camera-ready copy
-\newif\if@nipsfinal\@nipsfinalfalse
+% Content to be changed from year to year
+\newcommand{\@conferenceordinal}{2nd}
+\newcommand{\@conferenceyear}{2018}
+\newcommand{\@conferencelocation}{Z\"{u}rich, Switzerland}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Accepted options: [final,nonatbib,nohyperref]
+
+% Declare the final option, which creates camera-ready copy
+\newif\if@conferencefinal\@conferencefinalfalse
 \DeclareOption{final}{
-  \@nipsfinaltrue
+  \@conferencefinaltrue
 }
 
-% declare nonatbib option, which does not load natbib in case of
-% package clash (users can pass options to natbib via
-% \PassOptionsToPackage)
+% The natbib package is loaded by default. Declaring the nonatbib option, does not load natbib in case of package clash (users can pass options to natbib via \PassOptionsToPackage)
 \newif\if@natbib\@natbibtrue
 \DeclareOption{nonatbib}{
   \@natbibfalse
 }
 
-% declare preprint option, which creates a preprint version ready for
-% upload to, e.g., arXiv
-\newif\if@preprint\@preprintfalse
-\DeclareOption{preprint}{
-  \@preprinttrue
+% The hyperref package is loaded by default. Declaring the  nohyperref option, does not load the hyperref.
+\DeclareOption{nohyperref}{%
+  \gdef\nohyperref{1}
 }
 
+% Activate the options
 \ProcessOptions\relax
 
-% determine whether this is an anonymized submission
-\newif\if@submission\@submissiontrue
-\if@nipsfinal\@submissionfalse\fi
-\if@preprint\@submissionfalse\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Required packages:
 
-% fonts
-\renewcommand{\rmdefault}{ptm}
-\renewcommand{\sfdefault}{phv}
+\RequirePackage{lineno}
+\RequirePackage{color}
 
-% change this every year for notice string at bottom
-\newcommand{\@nipsordinal}{32nd}
-\newcommand{\@nipsyear}{2018}
-\newcommand{\@nipslocation}{Montr\'{e}al, Canada}
-
-% handle tweaks for camera-ready copy vs. submission copy
-\if@preprint
-  \newcommand{\@noticestring}{%
-    Preprint. Work in progress.%
-  }
-\else
-  \if@nipsfinal
-    \newcommand{\@noticestring}{%
-      \@nipsordinal\/ Conference on Neural Information Processing Systems
-      (NIPS \@nipsyear), \@nipslocation.%
-    }
-  \else
-    \newcommand{\@noticestring}{%
-      Submitted to \@nipsordinal\/ Conference on Neural Information
-      Processing Systems (NIPS \@nipsyear). Do not distribute.%
-    }
-
-    % line numbers for submission
-    \RequirePackage{lineno}
-    \linenumbers
-
-    % fix incompatibilities between lineno and amsmath, if required, by
-    % transparently wrapping linenomath environments around amsmath
-    % environments
-    \AtBeginDocument{%
-      \@ifpackageloaded{amsmath}{%
-        \newcommand*\patchAmsMathEnvironmentForLineno[1]{%
-          \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
-          \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
-          \renewenvironment{#1}%
-                           {\linenomath\csname old#1\endcsname}%
-                           {\csname oldend#1\endcsname\endlinenomath}%
-        }%
-        \newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
-          \patchAmsMathEnvironmentForLineno{#1}%
-          \patchAmsMathEnvironmentForLineno{#1*}%
-        }%
-        \patchBothAmsMathEnvironmentsForLineno{equation}%
-        \patchBothAmsMathEnvironmentsForLineno{align}%
-        \patchBothAmsMathEnvironmentsForLineno{flalign}%
-        \patchBothAmsMathEnvironmentsForLineno{alignat}%
-        \patchBothAmsMathEnvironmentsForLineno{gather}%
-        \patchBothAmsMathEnvironmentsForLineno{multline}%
-      }{}
-    }
-  \fi
-\fi
-
-% load natbib unless told otherwise
+% Load natbib unless told otherwise
 \if@natbib
-  \RequirePackage{natbib}
+  \RequirePackage[square,numbers]{natbib}
+  \bibliographystyle{corlabbrvnat}
 \fi
 
 % set page geometry
-\usepackage[verbose=true,letterpaper]{geometry}
+\RequirePackage{hyperref}       % hyperlinks
+\RequirePackage[verbose=true,letterpaper]{geometry}
 \AtBeginDocument{
   \newgeometry{
     textheight=9in,
@@ -121,9 +79,107 @@
     footskip=30pt
   }
   \@ifpackageloaded{fullpage}
-    {\PackageWarning{nips_2018}{fullpage package not allowed! Overwriting formatting.}}
+    {\PackageWarning{corl_2018}{fullpage package not allowed! Overwriting formatting.}}
     {}
 }
+
+
+\ifdefined\nohyperref\else\ifdefined\hypersetup
+  \definecolor{mydarkblue}{rgb}{0,0.08,0.45}
+  \hypersetup{ %
+    pdftitle={},
+    pdfauthor={},
+    pdfsubject={Proceedings of the \@conferenceordinal\/ Conference on Robot Learning (CoRL \@conferenceyear)},
+    pdfkeywords={},
+    pdfborder=0 0 0,
+    pdfpagemode=UseNone,
+    colorlinks=true,
+    linkcolor=mydarkblue,
+    citecolor=mydarkblue,
+    filecolor=mydarkblue,
+    urlcolor=mydarkblue,
+    pdfview=FitH}
+
+  \ifdefined\isaccepted \else
+    \hypersetup{pdfauthor={Anonymous Submission}}
+  \fi
+\fi\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+
+% fonts
+\renewcommand{\rmdefault}{ptm}
+\renewcommand{\sfdefault}{phv}
+
+% Create acknowledgments -- only if the option 'final' is activated
+\providecommand{\acknowledgments}{}
+\renewcommand{\acknowledgments}[1]{%
+\if@conferencefinal% 
+\subsubsection*{Acknowledgments} #1
+\fi
+}
+
+
+% handle tweaks for camera-ready copy vs. submission copy
+\if@conferencefinal
+  \newcommand{\@noticestring}{%
+    \@conferenceordinal\/ Conference on Robot Learning
+    (CoRL \@conferenceyear), \@conferencelocation.%
+  }
+\else
+  \newcommand{\@noticestring}{%
+    Submitted to the \@conferenceordinal\/ Conference on Robot Learning (CoRL \@conferenceyear). Do not distribute.%
+  }
+
+  % line numbers for submission
+  \linenumbers
+
+  % fix incompatibilities between lineno and amsmath, if required, by
+  % transparently wrapping linenomath environments around amsmath
+  % environments
+  \AtBeginDocument{%
+    \@ifpackageloaded{amsmath}{%
+      \newcommand*\patchAmsMathEnvironmentForLineno[1]{%
+        \expandafter\let\csname old#1\expandafter\endcsname\csname #1\endcsname
+        \expandafter\let\csname oldend#1\expandafter\endcsname\csname end#1\endcsname
+        \renewenvironment{#1}%
+          {\linenomath\csname old#1\endcsname}%
+          {\csname oldend#1\endcsname\endlinenomath}%
+      }%
+      \newcommand*\patchBothAmsMathEnvironmentsForLineno[1]{%
+        \patchAmsMathEnvironmentForLineno{#1}%
+        \patchAmsMathEnvironmentForLineno{#1*}%
+      }%
+      \patchBothAmsMathEnvironmentsForLineno{equation}%
+      \patchBothAmsMathEnvironmentsForLineno{align}%
+      \patchBothAmsMathEnvironmentsForLineno{flalign}%
+      \patchBothAmsMathEnvironmentsForLineno{alignat}%
+      \patchBothAmsMathEnvironmentsForLineno{gather}%
+      \patchBothAmsMathEnvironmentsForLineno{multline}%
+    }{}
+  }
+\fi
+
+
+
+% The DOI will now automatically generate a URL link. Pretty cool!
+% + Fix for hyperref and DOI (https://www.tug.org/pipermail/tex-live/2012-August/032161.html)
+%-----------------------------
+\makeatletter
+\providecommand{\doi}[1]{%
+  \begingroup
+    \let\bibinfo\@secondoftwo
+    \urlstyle{rm}%
+    \href{http://dx.doi.org/#1}{%
+      doi:\discretionary{}{}{}%
+      \nolinkurl{#1}%
+    }%
+  \endgroup
+}
+% \makeatother
+% %-----------------------------
 
 \widowpenalty=10000
 \clubpenalty=10000
@@ -296,6 +352,25 @@
   \vskip 0.09in%
 }
 
+%% keywords as first class citizens
+\def\keywords#1{%
+%  \ifdefined\isaccepted \else
+%    \par {\bf Keywords:} #1%
+%  \fi
+%  \ifdefined\nohyperref\else\ifdefined\hypersetup
+%    \hypersetup{pdfkeywords={#1}}
+%  \fi\fi
+ \ifdefined\isaccepted \else
+    \begin{quote}
+    \textbf{Keywords:} #1%
+    \end{quote}
+ \fi
+  \ifdefined\nohyperref\else\ifdefined\hypersetup
+    \hypersetup{pdfkeywords={#1}}
+  \fi\fi
+}
+
+
 % create title (includes both anonymized and non-anonymized versions)
 \providecommand{\@maketitle}{}
 \renewcommand{\@maketitle}{%
@@ -303,18 +378,11 @@
     \hsize\textwidth
     \linewidth\hsize
     \vskip 0.1in
-    \@toptitlebar
+%     \@toptitlebar
     \centering
     {\LARGE\bf \@title\par}
-    \@bottomtitlebar
-    \if@submission
-      \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}
-        Anonymous Author(s) \\
-        Affiliation \\
-        Address \\
-        \texttt{email} \\
-      \end{tabular}%
-    \else
+%     \@bottomtitlebar
+    \if@conferencefinal
       \def\And{%
         \end{tabular}\hfil\linebreak[0]\hfil%
         \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces%
@@ -324,6 +392,13 @@
         \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\ignorespaces%
       }
       \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}\@author\end{tabular}%
+    \else
+      \begin{tabular}[t]{c}\bf\rule{\z@}{24\p@}
+        Anonymous Author(s) \\
+        Affiliation \\
+        Address \\
+        \texttt{email} \\
+      \end{tabular}%
     \fi
     \vskip 0.3in \@minus 0.1in
   }
@@ -342,16 +417,22 @@
 % abstract styling
 \renewenvironment{abstract}%
 {%
-  \vskip 0.075in%
-  \centerline%
-  {\large\bf Abstract}%
-  \vspace{0.5ex}%
+%   \vskip 0.075in%
+%   \centerline%
+%   {\large\bf Abstract}%
+%   \vspace{0.5ex}%
   \begin{quote}%
+  \textbf{Abstract:}%
 }
 {
   \par%
-  \end{quote}%
   \vskip 1ex%
+%   \ifdefined\keywords
+%   \textbf{Keywords:}%
+%   \@keywords%
+%   \else
+%   \fi
+  \end{quote}%
 }
 
 \endinput

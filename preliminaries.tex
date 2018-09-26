@@ -1,0 +1,21 @@
+\vspace{-0.1cm}
+\section{Preliminaries}
+\label{sec:prelim}
+\vspace{-0.2cm}
+
+Our visual MPC problem formulation follows the problem statement outlined in prior work~\cite{foresight}. In this setting, an action-conditioned video prediction model $g$ (typically represented by a deep neural network) is used to predict future camera observations $\hat{I}_{1:T} \in \mathbb{R}^{T \times H\times W \times 3}$ for a robot conditioned on a sequence of candidate actions $a_{1:T}$, (where $T$ is the prediction horizon). This can be written as $\hat{I}_{1:T} = g(a_{1:T}, I_0)$, where $I_0$ is the starting frame from the current time-step. An optimization-based planner is then used to select the action sequence that results in an outcome that accomplishes a user-specified goal. This type of vision-based control is highly general, since it reasons over raw pixel observations without the requirement for a fixed-size state space, and has been demonstrated to generalize effectively to non-prehensile manipulation of previously unseen objects~\cite{foresight,sna}.
+
+Visual MPC assumes that the task can be defined in terms of pixel motion. Formally, in the initial image $I_0$ we define $i \in [0,..n]$ source and goal pixel locations denoted by the coordinates $d_{0,i} \in \mathbb{N}^2$ and $d_{g,i} \in \mathbb{N}^2$. Given a goal, visual MPC plans for a sequence of actions $a_{1:T}$ over $T$ time steps, where $T$ is the planning horizon, to move the pixel at $d_{0,i}$ to $d_{g,i}$. If this pixel lies on top of an object, this corresponds to moving that entire object to a goal position. Note that this problem formulation resembles visual servoing, but is considerably more complex, since moving the object at $d_0$ might require complex non-prehensile or prehensile manipulation and the use of a deep video prediction model.
+The planning problem is formulated as the minimization of a cost function $c$, which in prior work \cite{sna} measures the distance between the predicted pixel positions $\hat{d}_{\tau}$ and the goal position $d_g$:
+\begin{equation}
+c_i  = \sum_{\tau = 1, \dots, T} \mathbb{E}_{\hat{d}_{\tau,i} \sim P_{\tau,i}} \left[\|\hat{d}_{\tau,i} - d_{g,i}\|_2\right]  
+\label{eq:cost}
+\end{equation}
+where $c_i \in \mathbb{R}$. The planner makes use of a learned model that predicts pixel motion. In this paper, we use a deterministic variant of the video prediction model architecture developed by~\citet{savp}, where the pixel transformations are specified by flow vectors.
+Given a distribution over pixel positions \mbox{$P_{t_0,i}\in\mathbb{R}^{H\times W}, \sum_{H,W} P_{t_0,i} = 1$} at time $t = 0$, the model predicts distributions over its positions $P_{t,i}$ at time $t \in \{ 1, \dots, T \}$. Planning is performed using the cross-entropy method (CEM) \cite{cem-rk-13} which efficiently finds an action sequences where the cost $c_i$ (i.e. the sum over time of the expected distances to the goal) is lowest.
+To achieve the best results with imperfect models, the actions sequence is replanned at each real-world time step $t \in \{0,...,t_{max}\}$ following the framework of model-predictive control (MPC): at each real-world step $t$ the first action of the best action sequence is executed. 
+At the first real-world time step $t=0$, the distribution $P_{\tau=0,i}$ is initialized as 1 at the location of the designated pixel and zero elsewhere. In prior work \cite{sna, foresight}, in subsequent steps ($t > 0$),  the prediction of the previous step is used to initialize $P_{\tau=0,i}$. However this causes accumulating errors, often preventing the model from solving long-term tasks or responding to situation where the environment (e.g. objects) behave differently than expected. In effect, the model loses track of which object was designated in the initial image. In this work we propose a method for registering the current image to both a start and goal images, where the designated pixels are known, allowing the model to replan according to the most recent estimate of the objects position. Crucially, the method we propose for doing this is self-supervised using the same exact data that is used to train the video prediction model, allowing both the predictor and registration model to benefit from each episode of robot experience.
+
+
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.21)  26 SEP 2018 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.21)  26 SEP 2018 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,22 +979,25 @@ Package xcolor Warning: Incompatible color definition on input line 16.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/video_prediction.
 pdf>]
 
-Package xcolor Warning: Incompatible color definition on input line 42.
+Package xcolor Warning: Incompatible color definition on input line 43.
 
 
-Package xcolor Warning: Incompatible color definition on input line 42.
+Package xcolor Warning: Incompatible color definition on input line 44.
 
 
-Package xcolor Warning: Incompatible color definition on input line 42.
+Package xcolor Warning: Incompatible color definition on input line 44.
 
 
-Package xcolor Warning: Incompatible color definition on input line 47.
+Package xcolor Warning: Incompatible color definition on input line 44.
 
 
-Package xcolor Warning: Incompatible color definition on input line 47.
+Package xcolor Warning: Incompatible color definition on input line 49.
 
 
-Package xcolor Warning: Incompatible color definition on input line 47.
+Package xcolor Warning: Incompatible color definition on input line 49.
+
+
+Package xcolor Warning: Incompatible color definition on input line 49.
 
 ) (./relatedwork.tex
 
@@ -1099,6 +1102,7 @@ Package xcolor Warning: Incompatible color definition on input line 24.
 
 Package xcolor Warning: Incompatible color definition on input line 24.
 
+[2]
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
@@ -1114,7 +1118,7 @@ Package xcolor Warning: Incompatible color definition on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
-[2]) (./preliminaries.tex
+) (./preliminaries.tex
 
 Package xcolor Warning: Incompatible color definition on input line 6.
 
@@ -1140,7 +1144,7 @@ Package xcolor Warning: Incompatible color definition on input line 17.
 Package xcolor Warning: Incompatible color definition on input line 17.
 
 ) (./registration.tex [3]
-<images/registration_singletime.pdf, id=244, 376.40625pt x 239.89626pt>
+<images/registration_singletime.pdf, id=246, 376.40625pt x 239.89626pt>
 File: images/registration_singletime.pdf Graphic file (type pdf)
 
 <use images/registration_singletime.pdf>
@@ -1154,7 +1158,8 @@ Package xcolor Warning: Incompatible color definition on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 41.
 
-<images/registration_test_start.pdf, id=247, 221.82875pt x 122.4575pt>
+[4 <./images/registration_singletime.pdf>]
+<images/registration_test_start.pdf, id=288, 221.82875pt x 122.4575pt>
 File: images/registration_test_start.pdf Graphic file (type pdf)
 
 <use images/registration_test_start.pdf>
@@ -1162,7 +1167,7 @@ Package pdftex.def Info: images/registration_test_start.pdf used on input line
 58.
 (pdftex.def)             Requested size: 99.37125pt x 54.85497pt.
 
-<images/registration_test_goal.pdf, id=248, 221.82875pt x 122.4575pt>
+<images/registration_test_goal.pdf, id=289, 221.82875pt x 122.4575pt>
 File: images/registration_test_goal.pdf Graphic file (type pdf)
 
 <use images/registration_test_goal.pdf>
@@ -1170,14 +1175,14 @@ Package pdftex.def Info: images/registration_test_goal.pdf used on input line 5
 9.
 (pdftex.def)             Requested size: 99.37125pt x 54.85497pt.
 
-<images/registration_train.pdf, id=249, 390.45876pt x 229.85875pt>
+<images/registration_train.pdf, id=290, 390.45876pt x 229.85875pt>
 File: images/registration_train.pdf Graphic file (type pdf)
 
 <use images/registration_train.pdf>
 Package pdftex.def Info: images/registration_train.pdf used on input line 65.
 (pdftex.def)             Requested size: 218.61795pt x 119.1405pt.
- [4 <./images/registration_singletime.pdf>]
-<images/registration_overtime.pdf, id=290, 1422.63783pt x 312.98033pt>
+
+<images/registration_overtime.pdf, id=292, 1422.63783pt x 312.98033pt>
 File: images/registration_overtime.pdf Graphic file (type pdf)
 
 <use images/registration_overtime.pdf>
@@ -1234,7 +1239,7 @@ Package xcolor Warning: Incompatible color definition on input line 7.
 Package xcolor Warning: Incompatible color definition on input line 7.
 
 [6]) (./experiments.tex
-<images/pushing_score_cdf_robot.pdf, id=383, 361.35pt x 289.08pt>
+<images/pushing_score_cdf_robot.pdf, id=384, 361.35pt x 289.08pt>
 File: images/pushing_score_cdf_robot.pdf Graphic file (type pdf)
 
 <use images/pushing_score_cdf_robot.pdf>
@@ -1245,14 +1250,14 @@ Package pdftex.def Info: images/pushing_score_cdf_robot.pdf used on input line
 
 Package xcolor Warning: Incompatible color definition on input line 16.
 
-<images/push_correction.pdf, id=385, 995.84645pt x 85.35826pt>
+<images/push_correction.pdf, id=386, 995.84645pt x 85.35826pt>
 File: images/push_correction.pdf Graphic file (type pdf)
 
 <use images/push_correction.pdf>
 Package pdftex.def Info: images/push_correction.pdf used on input line 28.
 (pdftex.def)             Requested size: 397.48499pt x 34.06975pt.
 
-<images/pick_place_plush.pdf, id=386, 995.84645pt x 85.35826pt>
+<images/pick_place_plush.pdf, id=387, 995.84645pt x 85.35826pt>
 File: images/pick_place_plush.pdf Graphic file (type pdf)
 
 <use images/pick_place_plush.pdf>
@@ -1265,11 +1270,7 @@ Package xcolor Warning: Incompatible color definition on input line 42.
 
 Package xcolor Warning: Incompatible color definition on input line 42.
 
-[7 <./images/push_correction.pdf> <./images/pick_place_plush.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/pick_place_plush.pdf): PDF inc
-lusion: multiple pdfs with page group included in a single page
-> <./images/pushing_score_cdf_robot.pdf
+[7 <./images/push_correction.pdf> <./images/pushing_score_cdf_robot.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./images/pushing_score_cdf_robot.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
@@ -1286,7 +1287,7 @@ Package xcolor Warning: Incompatible color definition on input line 46.
 
 Package xcolor Warning: Incompatible color definition on input line 46.
 
-<images/grasping_score_cdf.pdf, id=467, 361.35pt x 289.08pt>
+<images/grasping_score_cdf.pdf, id=457, 361.35pt x 289.08pt>
 File: images/grasping_score_cdf.pdf Graphic file (type pdf)
 
 <use images/grasping_score_cdf.pdf>
@@ -1333,33 +1334,19 @@ Package xcolor Warning: Incompatible color definition on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-) (./main.bbl
-Underfull \vbox (badness 1442) has occurred while \output is active []
+) [8 <./images/pick_place_plush.pdf> <./images/grasping_score_cdf.pdf
 
- [8 <./images/grasping_score_cdf.pdf>]
+pdfTeX warning: /usr/bin/pdflatex (file ./images/grasping_score_cdf.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>] (./main.bbl
 
 Package xcolor Warning: Incompatible color definition on input line 39.
 
-[9]
-
-! Package inputenc Error: Unicode char ℓ (U+2113)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.211 \newblock Robust visual tracking using ℓ
-                                                 1 minimization.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[10]) [11] (./appendix.tex
+[9] [10]) [11] (./appendix.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 
-<images/2obj_scores_ours-predprop-ground-truth-track.pdf, id=550, 361.35pt x 28
+<images/2obj_scores_ours-predprop-ground-truth-track.pdf, id=552, 361.35pt x 28
 9.08pt>
 File: images/2obj_scores_ours-predprop-ground-truth-track.pdf Graphic file (typ
 e pdf)
@@ -1372,7 +1359,7 @@ f used on input line 8.
 Package wrapfig Warning: Collision between wrapping environments on input line 
 13.
 
-<images/simulator.png, id=551, 600.2425pt x 449.68pt>
+<images/simulator.png, id=553, 600.2425pt x 449.68pt>
 File: images/simulator.png Graphic file (type png)
 
 <use images/simulator.png>
@@ -1412,12 +1399,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
  11844 strings out of 493029
- 179616 string characters out of 6136234
- 323691 words of memory out of 5000000
- 14826 multiletter control sequences out of 15000+600000
+ 179621 string characters out of 6136234
+ 324115 words of memory out of 5000000
+ 14825 multiletter control sequences out of 15000+600000
  51249 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,10n,40p,1988b,527s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,40p,1988b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -1439,10 +1426,10 @@ hare/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on main.pdf (12 pages, 2068610 bytes).
+Output written on main.pdf (12 pages, 2069267 bytes).
 PDF statistics:
- 688 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 690 PDF objects out of 1000 (max. 8388607)
+ 479 compressed objects within 5 object streams
+ 96 named destinations out of 1000 (max. 500000)
  22193 words of extra memory for PDF output out of 24883 (max. 10000000)
 

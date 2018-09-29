@@ -43,10 +43,11 @@ We demonstrate our method on the task of maneuvering unknown objects in a table-
 manipulation skills with high-fidelity, tasks need to be specified in way that allows for precision. To specify goals, we provide an image of the desired configuration along with user-annotated positions of the objects of interest\footnote{this also allows the user to ignore distractor objects in the goal image}. This provides a straight-forward and grounded mechanism for a human to provide a goal in the observation space of the robot.
 Building upon prior methods that use self-supervised predictive models for control~\cite{foresight,sna,se3_control}, we develop a method that can plan actions with a video prediction model to achieve the desired state specified in the goal image.
 %%SL.06.12: I feel like maybe we should explicitly say that our method builds on prior work (foresight, sna), since in this case the contribution might actually be easier to understand if we explicitly frame it in terms of prior work. It might open us up to accusations that the work is incremental, but I think that is less bad than a lack of clarity about the nature of the contribution
-At each time step, our method uses a learned registration model to find correspondences between the current image and both the goal-image and the initial image.
+
+The main contribution of this work is a method for computing the planning cost based on image-to-image registration by using a learned registration model to find correspondences between the current image, the goal-image and the initial image.
 %We train a deep convolutional network to find these correspondences by learning an image-to-image warping function in a self-supervised manner. 
-By doing so, we enable the robot to persistently attempt the task until completion. 
-In contrast to the short-horizon pushing skills and arm motions demonstrated in prior work~\cite{foresight,sna,se3_control}, we show that our video prediction model can be used to perform longer-term manipulations, autonomously choosing when to push or to  pick objects, and, when provided enough time, accomplish tasks significantly more consistently.
+This allows closed-loop control, enabling the robot to persistently attempt the task until completion. In contrast to the short-horizon pushing skills and arm motions demonstrated in prior work~\cite{foresight,sna,se3_control}, we show that our video prediction model can be used to perform longer-term manipulations, autonomously choosing when to push or to  pick objects, and, when provided enough time, accomplish tasks significantly more consistently.
+In addition we show that a joint pushing and grasping-policy can be emerge from pure self-supervised learning. Furthermore by using with two separate views for video-prediction and task specification, 3D-tasks manipulation tasks can be solved.
 
 %acquiring rudimentary grasping behaviors entirely via video prediction.
 

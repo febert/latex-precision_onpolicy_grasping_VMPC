@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.21)  28 SEP 2018 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.21)  29 SEP 2018 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,49 +1001,37 @@ Package xcolor Warning: Incompatible color definition on input line 49.
 
 ) (./relatedwork.tex
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
-Package xcolor Warning: Incompatible color definition on input line 5.
-
-
-Package xcolor Warning: Incompatible color definition on input line 9.
-
-
-Package xcolor Warning: Incompatible color definition on input line 9.
-
-
-Package xcolor Warning: Incompatible color definition on input line 9.
-
-
-Package xcolor Warning: Incompatible color definition on input line 9.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 
 Package xcolor Warning: Incompatible color definition on input line 11.
@@ -1055,56 +1043,13 @@ Package xcolor Warning: Incompatible color definition on input line 11.
 Package xcolor Warning: Incompatible color definition on input line 11.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 11.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 14.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 12.
-
-
-Package xcolor Warning: Incompatible color definition on input line 25.
-
-
-Package xcolor Warning: Incompatible color definition on input line 25.
-
-
-Package xcolor Warning: Incompatible color definition on input line 25.
-
-
-Package xcolor Warning: Incompatible color definition on input line 25.
-
-
-Package xcolor Warning: Incompatible color definition on input line 25.
-
-[2]) (./preliminaries.tex
-
-Package xcolor Warning: Incompatible color definition on input line 6.
-
-
-Package xcolor Warning: Incompatible color definition on input line 6.
-
-
-Package xcolor Warning: Incompatible color definition on input line 6.
-
-
-Package xcolor Warning: Incompatible color definition on input line 9.
+Package xcolor Warning: Incompatible color definition on input line 14.
 
 
 Package xcolor Warning: Incompatible color definition on input line 14.
@@ -1113,16 +1058,96 @@ Package xcolor Warning: Incompatible color definition on input line 14.
 Package xcolor Warning: Incompatible color definition on input line 15.
 
 
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+
+Package xcolor Warning: Incompatible color definition on input line 20.
+
+
+Package xcolor Warning: Incompatible color definition on input line 20.
+
+[2]
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+) (./preliminaries.tex
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+
+Package xcolor Warning: Incompatible color definition on input line 11.
+
+
 Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-Package xcolor Warning: Incompatible color definition on input line 17.
+Package xcolor Warning: Incompatible color definition on input line 18.
 
 
-Package xcolor Warning: Incompatible color definition on input line 17.
+Package xcolor Warning: Incompatible color definition on input line 21.
 
-) (./registration.tex [3]
-<images/registration_singletime.pdf, id=227, 376.40625pt x 239.89626pt>
+
+Package xcolor Warning: Incompatible color definition on input line 21.
+
+) (./registration.tex
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+ [3]
+<images/registration_singletime.pdf, id=238, 376.40625pt x 239.89626pt>
 File: images/registration_singletime.pdf Graphic file (type pdf)
 
 <use images/registration_singletime.pdf>
@@ -1131,45 +1156,45 @@ Package pdftex.def Info: images/registration_singletime.pdf used on input line
 (pdftex.def)             Requested size: 198.7425pt x 126.66853pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 35.
+Package xcolor Warning: Incompatible color definition on input line 39.
 
 
-Package xcolor Warning: Incompatible color definition on input line 41.
+Package xcolor Warning: Incompatible color definition on input line 45.
 
 [4 <./images/registration_singletime.pdf>]
-<images/registration_test_start.pdf, id=268, 221.82875pt x 122.4575pt>
+<images/registration_test_start.pdf, id=280, 221.82875pt x 122.4575pt>
 File: images/registration_test_start.pdf Graphic file (type pdf)
 
 <use images/registration_test_start.pdf>
 Package pdftex.def Info: images/registration_test_start.pdf used on input line 
-58.
+68.
 (pdftex.def)             Requested size: 99.37125pt x 54.85497pt.
 
-<images/registration_test_goal.pdf, id=269, 221.82875pt x 122.4575pt>
+<images/registration_test_goal.pdf, id=281, 221.82875pt x 122.4575pt>
 File: images/registration_test_goal.pdf Graphic file (type pdf)
 
 <use images/registration_test_goal.pdf>
-Package pdftex.def Info: images/registration_test_goal.pdf used on input line 5
+Package pdftex.def Info: images/registration_test_goal.pdf used on input line 6
 9.
 (pdftex.def)             Requested size: 99.37125pt x 54.85497pt.
 
-<images/registration_train.pdf, id=270, 390.45876pt x 229.85875pt>
+<images/registration_train.pdf, id=282, 390.45876pt x 229.85875pt>
 File: images/registration_train.pdf Graphic file (type pdf)
 
 <use images/registration_train.pdf>
-Package pdftex.def Info: images/registration_train.pdf used on input line 65.
+Package pdftex.def Info: images/registration_train.pdf used on input line 75.
 (pdftex.def)             Requested size: 218.61795pt x 119.1405pt.
 
-<images/registration_overtime.pdf, id=272, 1422.63783pt x 312.98033pt>
+<images/registration_overtime.pdf, id=284, 1422.63783pt x 312.98033pt>
 File: images/registration_overtime.pdf Graphic file (type pdf)
 
 <use images/registration_overtime.pdf>
-Package pdftex.def Info: images/registration_overtime.pdf used on input line 78
+Package pdftex.def Info: images/registration_overtime.pdf used on input line 88
 .
 (pdftex.def)             Requested size: 397.48499pt x 87.44286pt.
 
 
-Package xcolor Warning: Incompatible color definition on input line 85.
+Package xcolor Warning: Incompatible color definition on input line 95.
 
 ) (./planning_costs.tex [5 <./images/registration_train.pdf> <./images/registra
 tion_test_start.pdf> <./images/registration_test_goal.pdf> <./images/registrati
@@ -1179,23 +1204,23 @@ pdfTeX warning: /usr/bin/pdflatex (file ./images/registration_overtime.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 
-Package xcolor Warning: Incompatible color definition on input line 12.
+Package xcolor Warning: Incompatible color definition on input line 16.
 
 ) (./trainining_procedure.tex
 
-Package xcolor Warning: Incompatible color definition on input line 3.
+Package xcolor Warning: Incompatible color definition on input line 5.
 
 
-Package xcolor Warning: Incompatible color definition on input line 3.
+Package xcolor Warning: Incompatible color definition on input line 5.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8.
+Package xcolor Warning: Incompatible color definition on input line 10.
 
 
-Package xcolor Warning: Incompatible color definition on input line 8.
+Package xcolor Warning: Incompatible color definition on input line 10.
 
 ) (./multi-viewcontrol.tex
 
@@ -1218,7 +1243,7 @@ Package xcolor Warning: Incompatible color definition on input line 7.
 Package xcolor Warning: Incompatible color definition on input line 7.
 
 ) (./experiments.tex
-<images/pushlong_bench_same_range.pdf, id=367, 361.35pt x 289.08pt>
+<images/pushlong_bench_same_range.pdf, id=379, 361.35pt x 289.08pt>
 File: images/pushlong_bench_same_range.pdf Graphic file (type pdf)
 
 <use images/pushlong_bench_same_range.pdf>
@@ -1233,7 +1258,7 @@ Package xcolor Warning: Incompatible color definition on input line 17.
 Package wrapfig Warning: Collision between wrapping environments on input line 
 19.
 
-<images/pushshort_bench_plots.pdf, id=369, 361.35pt x 289.08pt>
+<images/pushshort_bench_plots.pdf, id=381, 361.35pt x 289.08pt>
 File: images/pushshort_bench_plots.pdf Graphic file (type pdf)
 
 <use images/pushshort_bench_plots.pdf>
@@ -1245,14 +1270,14 @@ Package pdftex.def Info: images/pushshort_bench_plots.pdf used on input line 22
 Package wrapfig Warning: Stationary wrapfigure forced to float on input line 28
 .
 
-<images/push_correction.pdf, id=370, 995.84645pt x 85.35826pt>
+<images/push_correction.pdf, id=382, 995.84645pt x 85.35826pt>
 File: images/push_correction.pdf Graphic file (type pdf)
 
 <use images/push_correction.pdf>
 Package pdftex.def Info: images/push_correction.pdf used on input line 38.
 (pdftex.def)             Requested size: 397.48499pt x 34.06975pt.
 
-<images/pick_place_plush.pdf, id=371, 995.84645pt x 85.35826pt>
+<images/pick_place_plush.pdf, id=383, 995.84645pt x 85.35826pt>
 File: images/pick_place_plush.pdf Graphic file (type pdf)
 
 <use images/pick_place_plush.pdf>
@@ -1283,7 +1308,7 @@ Package xcolor Warning: Incompatible color definition on input line 61.
 
 Package xcolor Warning: Incompatible color definition on input line 61.
 
-<images/grasping_score_cdf.pdf, id=475, 361.35pt x 289.08pt>
+<images/grasping_score_cdf.pdf, id=487, 361.35pt x 289.08pt>
 File: images/grasping_score_cdf.pdf Graphic file (type pdf)
 
 <use images/grasping_score_cdf.pdf>
@@ -1346,7 +1371,7 @@ Package xcolor Warning: Incompatible color definition on input line 39.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 
-<images/simulator.png, id=586, 600.2425pt x 449.68pt>
+<images/simulator.png, id=592, 600.2425pt x 449.68pt>
 File: images/simulator.png Graphic file (type png)
 
 <use images/simulator.png>
@@ -1363,7 +1388,7 @@ Package xcolor Warning: Incompatible color definition on input line 17.
 Package xcolor Warning: Incompatible color definition on input line 17.
 
 
-<images/2obj_scores_ours-predprop-ground-truth-track.pdf, id=590, 361.35pt x 28
+<images/2obj_scores_ours-predprop-ground-truth-track.pdf, id=596, 361.35pt x 28
 9.08pt>
 File: images/2obj_scores_ours-predprop-ground-truth-track.pdf Graphic file (typ
 e pdf)
@@ -1395,11 +1420,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 11860 strings out of 493029
- 179906 string characters out of 6136234
- 323990 words of memory out of 5000000
+ 11853 strings out of 493029
+ 179841 string characters out of 6136234
+ 324227 words of memory out of 5000000
  14828 multiletter control sequences out of 15000+600000
- 51544 words of font info for 218 fonts, out of 8000000 for 9000
+ 51189 words of font info for 214 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,40p,1988b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
@@ -1423,10 +1448,10 @@ hare/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on main.pdf (12 pages, 14913998 bytes).
+Output written on main.pdf (12 pages, 14914157 bytes).
 PDF statistics:
- 728 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
- 99 named destinations out of 1000 (max. 500000)
+ 734 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
  22182 words of extra memory for PDF output out of 24883 (max. 10000000)
 

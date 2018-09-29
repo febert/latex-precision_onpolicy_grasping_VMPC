@@ -1,4 +1,6 @@
+\vspace{-0.1cm}
 \section{Related Work}
+\vspace{-0.1cm}
 
 % CF: cite Visual Robot Task Planning Chris Paxton somewhere -- CF: this actually trains using demonstrations... so maybe not as relevant as we thought.
 
@@ -14,15 +16,14 @@ Goal observations have been previously used for specifying a reward function for
 
 %TODO: reconcile the above and below paragraph.
 
-Another related robotics problem is visual servoing, where visual feedback is used to control a robot to reach a goal configuration~\cite{hutchinson1996tutorial,kragic2002survey,desouza2002survey}.
-Traditional approaches aim to minimize distances of feature points~\cite{feddema1989vision,espiau1992servo,wilson1996relative}, or pixel intensities~\cite{caron2013photometric}. Learning and convolutional networks have also been incorporated into visual servoing~\cite{saxena2017servoing,bateux2018servoing,lee2017servoing,google_handeye}. Unlike servoing approaches that use reactive control laws, we use multi-step predictive models to achieve temporally extended goals, while still using continuous visual feedback for retrying at every step. Furthermore, our method performs both prehensile and non-prehensile manipulation, while visual servoing typically assumes fully actuated control, often with a known Jacobian.
+A related problem is visual servoing, where visual feedback is used to reach a goal configuration~\cite{hutchinson1996tutorial,kragic2002survey,desouza2002survey}.
+Traditional approaches aim to minimize distances of feature points~\cite{feddema1989vision,espiau1992servo,wilson1996relative}, or pixel intensities~\cite{caron2013photometric}. Learning and convolutional networks have also been incorporated into visual servoing~\cite{saxena2017servoing,bateux2018servoing,lee2017servoing,google_handeye}. Unlike servoing approaches that use reactive control laws, we use multi-step predictive models to achieve temporally extended goals, while still using continuous visual feedback for retrying at every step. Further, our method performs non-prehensile manipulation, while visual servoing typically assumes fully actuated control, often with a known Jacobian.
 
 %Paragraph on robot retrying and correcting for mistakes using MPC.
 
 Model-predictive control (MPC)~\cite{camacho2013model} has proven successful in a variety of robotic tasks~\cite{shim2003decentralized,allibert2010predictive,howard2010receding,williams2017information,deep_mpc}.
-MPC involves planning for controls with a short horizon and re-planning as the execution progresses.
-Thus, it provides the foundation of persistent retrying and the ability to overcome inaccuracies of the predictive model. However, as we later show, maintaining an accurate model of the \emph{cost} used for planning throughout an episode is critical for success, and has prevented prior work on visual foresight~\cite{foresight,sna} from moving beyond short-term tasks.
-One of our primary contributions is a grounded mechanism for evaluating the planning cost of visual predictions, allowing persistent re-planning with video prediction models which enables longer-term manipulations.
+MPC involves planning with a short horizon and re-planning as the execution progresses, providing the foundation of persistent retrying and the ability to overcome inaccuracies in the predictive model. However, as we later show, maintaining an accurate model of the \emph{cost} used for planning throughout an episode is critical, and has prevented prior work on visual foresight~\cite{foresight,sna} from moving beyond short-term tasks.
+Our primary contributions is a grounded mechanism for evaluating the planning cost of visual predictions, allowing persistent re-planning with video prediction models.
 
 %
 %In contrast to the short-horizon pushing skills demonstrated in prior work~\cite{}, we show that our video prediction model can be used to perform longer-term manipulations and automatically choose to push and pick objects, acquiring rudimentary grasping behaviors entirely via video prediction.
@@ -32,7 +33,7 @@ One of our primary contributions is a grounded mechanism for evaluating the plan
 %%SL.06.12: maybe put this a bit later in the section, not too early
 
 
-It is also possible to use off-the-shelf trackers~\cite{lucas1981iterative,brox2004high,babenko2009visual,mei2009robust} to address this issue. However, these trackers usually only have a limited capability to adapt to the domain they are applied to, and can lose track during occlusions. A key advantage of our learned registration approach, inspired by \cite{meister2017unflow}, is that we can obtain registration success metrics for every point in the image and every pair of images and therefore we can propose a weighting scheme for the planning costs according to the \emph{uncertainty} of the individual registrations. Furthermore, since our method is completely self-supervised, it continues to improve as more data is collected by the robot.
+It possible to use off-the-shelf trackers~\cite{lucas1981iterative,brox2004high,babenko2009visual,mei2009robust} to help address this issue. However, these trackers usually only have a limited capability to adapt to the domain they are applied to, and can lose track during occlusions. A key advantage of our learned registration approach, inspired by \cite{meister2017unflow}, is that we can obtain registration success metrics for every point in the image and every pair of images and therefore we can propose a weighting scheme for the planning costs according to the \emph{uncertainty} of the individual registrations. Furthermore, since our method is completely self-supervised, it continues to improve as more data is collected by the robot.
 
 
 %\begin{itemize}

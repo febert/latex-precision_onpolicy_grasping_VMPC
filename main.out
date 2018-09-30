@@ -3,9 +3,9 @@
 \BOOKMARK [1][-]{section.3}{Preliminaries}{}% 3
 \BOOKMARK [1][-]{section.4}{Retrying by Registration}{}% 4
 \BOOKMARK [2][-]{subsection.4.1}{Test time procedure}{section.4}% 5
-\BOOKMARK [1][-]{section.5}{Planning Costs}{}% 6
-\BOOKMARK [2][-]{subsection.5.1}{Training procedure}{section.5}% 7
-\BOOKMARK [1][-]{section.6}{Scaling up Visual Model-Predictive Control}{}% 8
-\BOOKMARK [1][-]{section.7}{Experiments}{}% 9
-\BOOKMARK [2][-]{subsection.7.1}{Real-World Experiments}{section.7}% 10
-\BOOKMARK [1][-]{section.8}{Discussion}{}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Planning Costs}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Training procedure}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{Scaling up Visual Model-Predictive Control}{}% 8
+\BOOKMARK [1][-]{section.6}{Experiments}{}% 9
+\BOOKMARK [2][-]{subsection.6.1}{Real-World Experiments}{section.6}% 10
+\BOOKMARK [1][-]{section.7}{Discussion}{}% 11

@@ -4,9 +4,9 @@
 \vspace{-5mm}
 \centering
 \includegraphics[width=0.4\columnwidth,trim={3.2mm 0 0 0},clip]{images/new_overview}
-\caption{\small{Ground truth and predictions from the model (only every 4 frames are shown). These examples show grasping, pushing, and simultaneous grasping and dragging. }}
-\label{fig:video_prediction}
-\vspace{-0.2in}
+\caption{\small{Closed-loop Visual MPC: Large amounts of autonomously collected training data are used to train a image-to-image registration network and a video prediction model. At test time the current image $I_t$ is registred to both the start $I_0$ and goal-image $I_g$. \todo{add feedback arrow!}}}
+\label{fig:overview}
+\vspace{-0.4in}
 \end{wrapfigure}
 
 Humans have the ability to learn complex skills such as manipulating objects through millions of interactions with their environment during their lifetime.
@@ -44,9 +44,9 @@ We demonstrate our method on the task of maneuvering unknown objects in a table-
 Building upon prior methods that use self-supervised predictive models for control~\cite{foresight,sna,se3_control}, we develop a method that can plan actions with a video prediction model to achieve the desired state specified in the goal image.
 %%SL.06.12: I feel like maybe we should explicitly say that our method builds on prior work (foresight, sna), since in this case the contribution might actually be easier to understand if we explicitly frame it in terms of prior work. It might open us up to accusations that the work is incremental, but I think that is less bad than a lack of clarity about the nature of the contribution
 
-The main contribution of this work is a method for computing the planning cost based on image-to-image registration by using a learned registration model to find correspondences  between the current image and both the goal image and the initial image.
+The main contribution of this work is a method for computing the planning cost based on image-to-image registration by using a learned registration model to find correspondences  between the current image and both the goal image and the initial image. See \autoref{fig:overview} for an illustration.
 %We train a deep convolutional network to find these correspondences by learning an image-to-image warping function in a self-supervised manner. 
-This allows closed-loop control, enabling the robot to persistently attempt the task until completion. In contrast to the short-horizon pushing skills and arm motions demonstrated in prior work~\cite{foresight,sna,se3_control}, we show that our video prediction model can be used to perform longer-term manipulations, autonomously choosing when to push or to  pick objects, and, when provided enough time, accomplish tasks significantly more consistently.
+This allows closed-loop control, enabling the robot to persistently attempt the task until completion. In contrast to the short-horizon pushing skills demonstrated in prior work~\cite{foresight,sna,se3_control}, we show that our video prediction model can be used to perform longer-term manipulations, autonomously choosing when to push or to  pick objects, and, when provided enough time, accomplish tasks significantly more consistently.
 In addition we show that a joint pushing and grasping-policy can be emerge from pure self-supervised learning. Furthermore by using with two separate views for video-prediction and task specification, 3D-tasks manipulation tasks can be solved.
 
 %Compared to prior work on self-supervised learning and hand-engineered tracking modules, we find that our approach is able to perform a variety of object manipulation tasks and, when provided enough time, achieve tasks significantly more consistently.

@@ -1,4 +1,5 @@
 \section{Scaling up Visual Model-Predictive Control}
+\label{sec:scalingup}
 \paragraph{Extension to multiple cameras.}
 Prior work has considered visual MPC with a single camera~\cite{foresight,sna}, where objects are manipulated on a plane. To define goals in 3D, we extend visual MPC to include multiple camera views (with two cameras in our prototype). Since tasks are defined in terms of pixel motion in 2D image space, the combination of multiple 2D tasks with cameras oriented appropriately defines a 3D task. In our experiments, we show that we can define 3D manipulation tasks (such as lifting an object from the table) that would be ambiguous using only a single camera view. The registration method described in the previous section is used separately per view to allow for dynamic retrying to solve temporally extended tasks. The planning costs from each view are combined using weighted averaging where the weights are provided by the registration network (see equation \ref{eqn:cost_avg}). 
 

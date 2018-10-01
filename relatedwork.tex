@@ -1,6 +1,9 @@
 \vspace{-0.1cm}
 \section{Related Work}
 \vspace{-0.1cm}
+
+Prior work has studied pushing with hand-engineered models or features \cite{hermans2013learning,salganicoff1993vision}, as well as 
+
 In prior work \cite{hermans2013learning,salganicoff1993vision}, pushing of unknown objects is learned from interaction data between the robot and objects. However the models employed there rely on hand-engineered input features which can make it hard to scale to complex real-world scenarios. 
 It as been shown in \cite{goldfeder2009data} and others that grasps on unseen objects can be found by matching the sensed 3D geometry to a database of precomputed object-grasp pairs, which has the downside that physical properties such as mass and friction are ignored. Furthermore most prior approaches are not capable of selecting whether a grasping, pushing or dragging strategy is better suited to solve the given task and also do not exhibit a "retrying" behavior for recovering from failure.
 Video-prediction based manipulation is more general than many existing methods for robotic manipulation such as grasping specific \cite{lenz2015deep, goldfeder2009data, zeng2017robotic} or pushing specific works \cite{hermans2013learning, salganicoff1993vision} because it does not require any human intervention at training time, since it is fully self-supervised. Also it does not make any assumptions about the dimensionality of the state space.

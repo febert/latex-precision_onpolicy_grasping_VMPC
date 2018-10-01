@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 SEP 2018 12:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  30 SEP 2018 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1222,25 +1222,19 @@ File: images/registration_train.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/registration_train.pdf used on input line 57.
 (pdftex.def)             Requested size: 218.61795pt x 119.1405pt.
 
-<images/registration_overtime.pdf, id=232, 1650.25984pt x 312.98033pt>
-File: images/registration_overtime.pdf Graphic file (type pdf)
+<images/reg_over_time.png, id=232, 1638.12pt x 308.15125pt>
+File: images/reg_over_time.png Graphic file (type png)
 
-<use images/registration_overtime.pdf>
-Package pdftex.def Info: images/registration_overtime.pdf used on input line 70
-.
-(pdftex.def)             Requested size: 397.48499pt x 75.38425pt.
+<use images/reg_over_time.png>
+Package pdftex.def Info: images/reg_over_time.png used on input line 70.
+(pdftex.def)             Requested size: 397.48499pt x 74.77124pt.
 
 
 Package xcolor Warning: Incompatible color definition on input line 77.
 
 ) (./planning_costs.tex [5 <./images/registration_train.pdf> <./images/registra
-tion_test_start.pdf> <./images/registration_test_goal.pdf> <./images/registrati
-on_overtime.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./images/registration_overti
-me.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-
->]
+tion_test_start.pdf> <./images/registration_test_goal.pdf> <./images/reg_over_t
+ime.png>]
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
@@ -1282,14 +1276,14 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-[6] <images/pick_place_plush.pdf, id=323, 995.84645pt x 85.35826pt>
+[6] <images/pick_place_plush.pdf, id=306, 995.84645pt x 85.35826pt>
 File: images/pick_place_plush.pdf Graphic file (type pdf)
 
 <use images/pick_place_plush.pdf>
 Package pdftex.def Info: images/pick_place_plush.pdf used on input line 13.
 (pdftex.def)             Requested size: 397.48499pt x 34.06975pt.
 ) (./experiments.tex
-<images/pushlong_bench_same_range.pdf, id=324, 542.025pt x 433.62pt>
+<images/pushlong_bench_same_range.pdf, id=307, 542.025pt x 433.62pt>
 File: images/pushlong_bench_same_range.pdf Graphic file (type pdf)
 
 <use images/pushlong_bench_same_range.pdf>
@@ -1304,7 +1298,7 @@ Package xcolor Warning: Incompatible color definition on input line 17.
 Package wrapfig Warning: Collision between wrapping environments on input line 
 19.
 
-<images/pushshort_bench_plots.pdf, id=326, 361.35pt x 289.08pt>
+<images/pushshort_bench_plots.pdf, id=309, 361.35pt x 289.08pt>
 File: images/pushshort_bench_plots.pdf Graphic file (type pdf)
 
 <use images/pushshort_bench_plots.pdf>
@@ -1319,7 +1313,7 @@ Package wrapfig Warning: Stationary wrapfigure forced to float on input line 28
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-<images/push_correction.pdf, id=328, 995.84645pt x 85.35826pt>
+<images/push_correction.pdf, id=311, 995.84645pt x 85.35826pt>
 File: images/push_correction.pdf Graphic file (type pdf)
 
 <use images/push_correction.pdf>
@@ -1358,7 +1352,7 @@ Package xcolor Warning: Incompatible color definition on input line 54.
 
 Package xcolor Warning: Incompatible color definition on input line 54.
 
-<images/grasping_score_cdf.pdf, id=422, 542.025pt x 433.62pt>
+<images/grasping_score_cdf.pdf, id=406, 542.025pt x 433.62pt>
 File: images/grasping_score_cdf.pdf Graphic file (type pdf)
 
 <use images/grasping_score_cdf.pdf>
@@ -1408,7 +1402,7 @@ Package xcolor Warning: Incompatible color definition on input line 39.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 
-<images/simulator.png, id=519, 600.2425pt x 449.68pt>
+<images/simulator.png, id=503, 600.2425pt x 449.68pt>
 File: images/simulator.png Graphic file (type png)
 
 <use images/simulator.png>
@@ -1423,7 +1417,7 @@ Package wrapfig Warning: Collision between wrapping environments on input line
 16.
 
 
-<images/2obj_scores_ours-predprop-ground-truth-track.pdf, id=521, 361.35pt x 28
+<images/2obj_scores_ours-predprop-ground-truth-track.pdf, id=505, 361.35pt x 28
 9.08pt>
 File: images/2obj_scores_ours-predprop-ground-truth-track.pdf Graphic file (typ
 e pdf)
@@ -1466,8 +1460,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
  12143 strings out of 492995
- 184765 string characters out of 6132704
- 331324 words of memory out of 5000000
+ 184725 string characters out of 6132704
+ 331313 words of memory out of 5000000
  15132 multiletter control sequences out of 15000+600000
  52346 words of font info for 213 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1496,10 +1490,10 @@ pe1/public/cm-super/sftt0900.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pf
 b>
-Output written on main.pdf (12 pages, 14652606 bytes).
+Output written on main.pdf (12 pages, 5635685 bytes).
 PDF statistics:
- 664 PDF objects out of 1000 (max. 8388607)
- 463 compressed objects within 5 object streams
+ 648 PDF objects out of 1000 (max. 8388607)
+ 453 compressed objects within 5 object streams
  98 named destinations out of 1000 (max. 500000)
  24742 words of extra memory for PDF output out of 24883 (max. 10000000)
 

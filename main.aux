@@ -29,19 +29,17 @@
 \citation{foresight,sna}
 \citation{hermans2013learning,salganicoff1993vision}
 \citation{goldfeder2009data}
-\citation{lenz2015deep,goldfeder2009data,zeng2017robotic}
-\citation{hermans2013learning,salganicoff1993vision}
 \citation{lerrel,google_handeye,princeton_pushgrasp}
 \citation{crashing,greg_kahn_uncertainty}
 \citation{foresight,sna,se3_control}
 \citation{se3_control}
 \citation{foresight,sna}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}}
 \citation{jagersand1995visual,deguchi1999image,e2c,dsae}
 \citation{hutchinson1996tutorial,kragic2002survey,desouza2002survey}
 \citation{feddema1989vision,espiau1992servo,wilson1996relative}
 \citation{caron2013photometric}
 \citation{saxena2017servoing,bateux2018servoing,lee2017servoing,google_handeye}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}}
 \citation{camacho2013model}
 \citation{shim2003decentralized,allibert2010predictive,howard2010receding,williams2017information,deep_mpc}
 \citation{foresight,sna}
@@ -52,10 +50,10 @@
 \citation{sna}
 \citation{savp}
 \citation{cem-rk-13}
+\citation{sna,foresight}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Preliminaries}{3}{section.3}}
 \newlabel{sec:prelim}{{3}{3}{Preliminaries}{section.3}{}}
 \newlabel{eq:cost}{{1}{3}{Preliminaries}{equation.3.1}{}}
-\citation{sna,foresight}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Retrying by Registration}{4}{section.4}}
 \newlabel{sec:reg}{{4}{4}{Retrying by Registration}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Test time procedure}{4}{subsection.4.1}}
@@ -68,43 +66,43 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Outputs of registration network. The first row shows the timesteps from left to right of a robot picking and moving a red bowl, the second row shows each image warped to the initial image via registration, and the third row shows the same for the goal image. A successful registration in this visualization would result in images that closely resemble the start- or goal image. In the first row, the locations where the designated pixel of the start image $d_0$ and the goal image $d_g$ are found are marked with red and blue crosses, respectively. It can be seen that the registration to the start image (red cross) is failing in the second to last time step, while the registration to the goal image (blue cross) succeeds for all time steps. The numbers in red, in the upper left corners indicate the trade off factors $\lambda $ between the views and are used as weighting factors for the planning cost. (Best viewed in PDF)}\relax }}{5}{figure.caption.5}}
 \newlabel{fig:tracking_overtime}{{4}{5}{\small {Outputs of registration network. The first row shows the timesteps from left to right of a robot picking and moving a red bowl, the second row shows each image warped to the initial image via registration, and the third row shows the same for the goal image. A successful registration in this visualization would result in images that closely resemble the start- or goal image. In the first row, the locations where the designated pixel of the start image $d_0$ and the goal image $d_g$ are found are marked with red and blue crosses, respectively. It can be seen that the registration to the start image (red cross) is failing in the second to last time step, while the registration to the goal image (blue cross) succeeds for all time steps. The numbers in red, in the upper left corners indicate the trade off factors $\lambda $ between the views and are used as weighting factors for the planning cost. (Best viewed in PDF)}\relax }{figure.caption.5}{}}
 \newlabel{eqn:warped_pos}{{4}{5}{Test time procedure}{equation.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Planning Costs}{5}{subsection.4.2}}
+\newlabel{subsec:planning_costs}{{4.2}{5}{Planning Costs}{subsection.4.2}{}}
 \citation{meister2017unflow}
 \citation{meister2017unflow}
 \citation{foresight,sna}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Planning Costs}{6}{subsection.4.2}}
-\newlabel{subsec:planning_costs}{{4.2}{6}{Planning Costs}{subsection.4.2}{}}
+\citation{sna,foresight}
+\citation{grasping_fetal}
 \newlabel{eqn:cost_avg}{{5}{6}{Planning Costs}{equation.4.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Training procedure}{6}{subsection.4.3}}
 \newlabel{subsec:training}{{4.3}{6}{Training procedure}{subsection.4.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Scaling up Visual Model-Predictive Control}{6}{section.5}}
 \newlabel{sec:scalingup}{{5}{6}{Scaling up Visual Model-Predictive Control}{section.5}{}}
 \@writefile{toc}{\contentsline {paragraph}{Extension to multiple cameras.}{6}{section*.6}}
-\citation{sna,foresight}
-\citation{grasping_fetal}
+\@writefile{toc}{\contentsline {paragraph}{Combined prehensile and non-prehensile manipulation.}{6}{section*.7}}
+\citation{babenko2009visual}
+\citation{sna}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Retrying behaviour of our method combining prehensile and non-prehensile manipulation. In the first 4 time instants shown the agent pushes the object. It then loses the object, and decides to grasp it pulling it all the way to the goal. Retrying is enabled by applying the learned registration to both camera views (here we only show the front view).}\relax }}{7}{figure.caption.8}}
 \newlabel{fig:push_grasp}{{5}{7}{\small {Retrying behaviour of our method combining prehensile and non-prehensile manipulation. In the first 4 time instants shown the agent pushes the object. It then loses the object, and decides to grasp it pulling it all the way to the goal. Retrying is enabled by applying the learned registration to both camera views (here we only show the front view).}\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {paragraph}{Combined prehensile and non-prehensile manipulation.}{7}{section*.7}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Experiments}{7}{section.6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Benchmark for pushing with 20 different tasks evaluated on unseen objects. Fraction of runs where final distance (in pixel units of 48x64 image) is lower than threshold. Our method shows a clear gain over OpenCV tracking and predictor propagation.}\relax }}{7}{figure.caption.9}}
-\newlabel{fig:push_bench_long}{{6}{7}{\small {Benchmark for pushing with 20 different tasks evaluated on unseen objects. Fraction of runs where final distance (in pixel units of 48x64 image) is lower than threshold. Our method shows a clear gain over OpenCV tracking and predictor propagation.}\relax }{figure.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Benchmark for short distance pushing. Fraction of runs where final distance is lower than threshold.}\relax }}{7}{figure.caption.10}}
-\newlabel{fig:push_bench_short}{{7}{7}{\small {Benchmark for short distance pushing. Fraction of runs where final distance is lower than threshold.}\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Results for long pushing tasks with 20 objects not seen during training, showing fraction of runs where final distance is lower than threshold. Our method shows a clear gains over OpenCV tracking and predictor propagation.}\relax }}{7}{figure.caption.9}}
+\newlabel{fig:push_bench_long}{{6}{7}{\small {Results for long pushing tasks with 20 objects not seen during training, showing fraction of runs where final distance is lower than threshold. Our method shows a clear gains over OpenCV tracking and predictor propagation.}\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Results for short pushing tasks. Fraction of runs where final distance is lower than threshold.}\relax }}{7}{figure.caption.10}}
+\newlabel{fig:push_bench_short}{{7}{7}{\small {Results for short pushing tasks. Fraction of runs where final distance is lower than threshold.}\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{Pushing with retrying.}{7}{figure.caption.12}}
+\citation{sna}
 \citation{babenko2009visual}
 \citation{sna}
-\citation{sna}
-\citation{babenko2009visual}
-\citation{sna}
+\bibdata{bib}
+\bibcite{lerrel}{{1}{2016}{{Pinto and Gupta}}{{}}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ {Applying our method to a pushing task. The goal is to push the bottle to the green point. In the first 3 time instants the object behaves unexpectedly, moving down. The tracking then allows the robot to retry, allowing it to eventually bring the object to the goal.}\relax }}{8}{figure.caption.12}}
 \newlabel{fig:push_retry}{{8}{8}{\small {Applying our method to a pushing task. The goal is to push the bottle to the green point. In the first 3 time instants the object behaves unexpectedly, moving down. The tracking then allows the robot to retry, allowing it to eventually bring the object to the goal.}\relax }{figure.caption.12}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  Success rate for long-distance pushing benchmark with 20 different object/goal configurations and short-distance benchmark with 15 object/goal configurations. Success is defined as bringing the object closer than 15 pixels to the goal, where the complete image has size 48x64.\relax }}{8}{table.caption.13}}
 \newlabel{table:res_longd}{{1}{8}{\footnotesize Success rate for long-distance pushing benchmark with 20 different object/goal configurations and short-distance benchmark with 15 object/goal configurations. Success is defined as bringing the object closer than 15 pixels to the goal, where the complete image has size 48x64.\relax }{table.caption.13}{}}
-\@writefile{toc}{\contentsline {paragraph}{Pushing with retrying.}{8}{figure.caption.12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ On the real-world grasping benchmark, our registration method is on par with OpenCV tracking.\relax }}{8}{figure.caption.15}}
-\newlabel{fig:grasp_bench}{{9}{8}{\small On the real-world grasping benchmark, our registration method is on par with OpenCV tracking.\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces \relax \fontsize  {9}{10}\selectfont  \abovedisplayskip 6\p@ plus1.5\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayskip \abovedisplayskip \belowdisplayshortskip 3\p@ plus2\p@ minus2\p@ Results with combined prehensile and non-prehensile manipulation.\relax }}{8}{figure.caption.15}}
+\newlabel{fig:grasp_bench}{{9}{8}{\small Results with combined prehensile and non-prehensile manipulation.\relax }{figure.caption.15}{}}
 \@writefile{toc}{\contentsline {paragraph}{Combined prehensile and non-prehensile manipulation.}{8}{figure.caption.15}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Discussion}{8}{section.7}}
-\bibdata{bib}
-\bibcite{lerrel}{{1}{2016}{{Pinto and Gupta}}{{}}}
 \bibcite{google_handeye}{{2}{2016}{{Levine et~al.}}{{Levine, Pastor, Krizhevsky, Ibarz, and Quillen}}}
 \bibcite{princeton_pushgrasp}{{3}{2018}{{Zeng et~al.}}{{Zeng, Song, Welker, Lee, Rodriguez, and Funkhouser}}}
 \bibcite{foresight}{{4}{2017}{{Finn and Levine}}{{}}}
